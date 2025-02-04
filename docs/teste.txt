@@ -1,0 +1,221 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}    % Codificação UTF-8
+\usepackage[T1]{fontenc}       % Codificação de fonte
+\usepackage[portuguese]{babel} % Habilita o idioma português
+\usepackage{amsmath,amssymb,amsfonts} % Pacotes matemáticos
+\usepackage{graphicx}          % Inclusão de figuras
+\usepackage{hyperref}          % Hiperlinks no documento
+\usepackage{indentfirst}       % Indenta o primeiro parágrafo de cada seção
+\usepackage{float}             % Controle sobre posicionamento de figuras
+\usepackage{geometry}          % Configurações de marg
+
+\geometry{
+  left=3cm,
+  right=2cm,
+  top=3cm,
+  bottom=2cm
+}
+
+\begin{document}
+
+% -----------------------------------
+% CAPA
+% -----------------------------------
+\begin{titlepage}
+\begin{center}
+\Large{UNIVERSIDADE FEDERAL DE MINAS GERAIS}\\
+\vspace*{1cm}
+\large{ENGENHARIA DE SISTEMAS}\\
+\vspace*{4cm}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.25\linewidth]{Captura de tela 2025-02-04 150325.png}
+    \label{fig:enter-label}
+\end{figure}
+\Huge{\textbf{Projeto de Máquina de Vendas em Nível RTL}}\\
+\vspace*{2cm}
+\large{Bianca Lopes}\\
+\large{Gabriel Veloso}\\
+\vspace*{1cm}
+\vfill
+\large{\textbf{Belo Horizonte}} \\
+\large{\textbf{2025}} \\
+
+\end{center}
+\end{titlepage}
+
+% -------------------------------------------------
+% SUMÁRIO
+% -------------------------------------------------
+\tableofcontents
+\clearpage
+
+\setcounter{page}{1} % Inicia a contagem de páginas a partir da página 1
+
+% -------------------------------------------------
+% SEÇÃO 1: INTRODUÇÃO
+% -------------------------------------------------
+\section{Introdução}
+A crescente demanda por sistemas automatizados tem impulsionado o desenvolvimento de soluções inteligentes e eficientes, como as máquinas de vendas. Este trabalho tem como objetivo a elaboração de um projeto em nível RTL para uma máquina de vendas, enfatizando a integração entre hardware e lógica de controle digital. Para tanto, a arquitetura proposta divide-se em duas partes principais: o caminho de dados (Datapath), responsável pelas operações aritméticas e armazenamento, e a máquina de estados finitos (FSM), que orquestra a sequência das operações conforme os sinais de entrada.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{maquinas-automaticas-snacks-lanches-refrigerantes-03.jpg}
+    \caption{Máquina de Refrigerantes}
+    \label{fig:enter-label}
+\end{figure}
+A abordagem modular adotada permite que o sistema seja facilmente adaptado a novas funcionalidades, como a inclusão de diferentes moedas ou a alteração dos preços dos produtos, além de facilitar a manutenção e a verificação formal do projeto.
+
+\subsection{Objetivo}
+O presente projeto visa:
+\begin{itemize}
+    \item Desenvolver uma arquitetura RTL que atenda aos requisitos funcionais de uma máquina de vendas;
+    \item Implementar a separação entre a lógica aritmética e de controle, garantindo clareza e modularidade no design;
+    \item Proporcionar uma base para futuras expansões, considerando aspectos de escalabilidade e reuso de módulos.
+\end{itemize}
+
+% -------------------------------------------------
+% SEÇÃO 2: MODELAGEM DO SISTEMA
+% -------------------------------------------------
+\section{Modelagem do Sistema}
+
+Nesta seção, são apresentados os principais componentes do sistema, os quais se articulam para o funcionamento completo da máquina de vendas.
+
+\subsection{Periféricos (Entradas e Saídas)}
+\label{sec:perifericos}
+O projeto considera a interação com diversos periféricos, fundamentais para a operação correta do sistema. As entradas e saídas definidas são:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Diagrama de Blocos do Sistema.drawio.png}
+    \caption{Diagrama de Blocos do Sistema}
+    \label{fig:enter-label}
+\end{figure}
+
+\paragraph{Entradas:}
+\begin{itemize}
+    \item \textbf{\texttt{coin\_value[3:0]}}: Representa o valor da moeda inserida, codificado em 4 bits.
+    \item \textbf{\texttt{product\_selection[3:0]}}: Código do produto selecionado pelo usuário.
+    \item \textbf{\texttt{reset}}: Sinal de reinicialização do sistema, utilizado para restaurar o estado inicial.
+\end{itemize}
+
+\paragraph{Saídas:}
+\begin{itemize}
+    \item \textbf{\texttt{change[3:0]}}: Indica o valor do troco a ser devolvido, representado em 4 bits.
+    \item \textbf{\texttt{display[3:0]}}: Sinal destinado à comunicação de mensagens ou valores por meio de um display.
+    \item \textbf{\texttt{liberar\_produto}}: Sinal que ativa o mecanismo de entrega do produto.
+    \item \textbf{\texttt{liberar\_troco}}: Sinal responsável por iniciar a devolução do troco.
+\end{itemize}
+\begin{table}[H]
+\scriptsize  % Diminui o tamanho da fonte; pode usar \footnotesize, \small, etc.
+\centering
+\caption{Sinais e Registradores do Sistema}
+\label{tab:sinais_registradores}
+\begin{tabular}{|l|c|c|p{5.5cm}|}
+\hline
+\textbf{Nome} & \textbf{Bits} & \textbf{Tipo} & \textbf{Descrição resumida} \\ \hline
+
+\texttt{coin\_value}        & 4  & Entrada  & Valor da moeda inserida.            \\ \hline
+\texttt{product\_selection} & 4  & Entrada  & Código do produto escolhido.         \\ \hline
+\texttt{reset}              & 1  & Entrada  & Reinicializa a FSM.                 \\ \hline
+\texttt{FLASH\_ADDR}        & 16 & Saída    & Endereço para a memória de preços.   \\ \hline
+\texttt{FLASH\_DATA}        & 16 & Entrada  & Dados lidos da memória de preços.    \\ \hline
+\texttt{FLASH\_WE}          & 1  & Saída    & Controle de escrita na memória.      \\ \hline
+\texttt{display}            & 4  & Saída    & Mensagem/estado no display.          \\ \hline
+\texttt{change}             & 4  & Saída    & Valor do troco a liberar.            \\ \hline
+\texttt{libera\_produto}    & 1  & Saída    & Comanda a liberação do refrigerante. \\ \hline
+\texttt{total\_inserido}    & 8  & Reg.     & Acumula valor total inserido.        \\ \hline
+\texttt{troco}              & 8  & Reg.     & Armazena o valor de troco calculado. \\ \hline
+\texttt{preco\_produto}     & 8  & Reg.     & Armazena o preço do produto (LUT).    \\ \hline
+
+\end{tabular}
+\end{table}
+\subsection{Arquitetura do Processador: FSM e Datapath}
+O núcleo do sistema é composto por dois módulos principais:
+
+\paragraph{FSM (Finite State Machine):} 
+A FSM é responsável por gerenciar a sequência de operações, definindo os estados de operação, tais como:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{vending-machine-diagrama estado alto nível.drawio.png}
+    \caption{Diagrama de Estado de Alto Nível}
+    \label{fig:enter-label}
+\end{figure}
+\begin{itemize}
+    \item \textbf{ESPERA}: Estado inicial, no qual nenhuma operação aritmética é realizada. A FSM não ativa os sinais de \texttt{load\_acumulador} nem do comparador. O registrador \texttt{total\_inserido} permanece inalterado, salvo se \texttt{reset} for acionado, zerando-o. Se \texttt{coin\_value} $\neq 0$, a FSM avança para REGISTRA MOEDA.
+    
+    \item \textbf{REGISTRA MOEDA}: O somador é ativado para adicionar \texttt{coin\_value} ao \texttt{total\_inserido}. O sinal de controle \texttt{load\_acumulador} = 1 carrega o resultado da soma no registrador \texttt{total\_inserido}. Após essa operação, a FSM segue para VERIFICA CRÉDITO.
+    
+    \item \textbf{VERIFICA CRÉDITO}: O comparador (\texttt{enable\_comparador}) é ativado para comparar se \texttt{total\_inserido} $\geq$ \texttt{preco\_produto}. Se \texttt{total\_inserido} $<$ \texttt{preco\_produto}, a FSM vai para ERRO VALOR. Caso contrário, avança para LIBERA PRODUTO.
+    
+    \item \textbf{ERRO VALOR}: Não há operação aritmética. O \texttt{display} pode indicar “Falta X reais” dependendo da lógica de \texttt{select\_display[1:0]}. O sistema aguarda nova moeda ou timeout. Se uma nova moeda for inserida, retorna para REGISTRA MOEDA. Se houver um limite de tempo ou \texttt{reset}, pode ir para FINALIZA.
+    
+    \item \textbf{LIBERA PRODUTO}: Como \texttt{total\_inserido} $\geq$ \texttt{preco\_produto} já foi verificado, o sinal \texttt{liberar\_produto} = 1 sinaliza a liberação do refrigerante. Se \texttt{total\_inserido} = \texttt{preco\_produto}, a FSM segue para FINALIZA. Caso contrário, avança para CALCULA TROCO.
+    
+    \item \textbf{CALCULA TROCO}: O subtrator é ativado para calcular o troco: \texttt{troco} $\leftarrow$ \texttt{total\_inserido} - \texttt{preco\_produto}. O sinal \texttt{load\_troco} = 1 carrega o valor no registrador \texttt{troco}. Após essa operação, a FSM segue para RETORNA TROCO.
+    
+    \item \textbf{RETORNA TROCO}: O sinal \texttt{liberar\_troco} = 1 (ou \texttt{change[3:0]} recebe parte do valor de \texttt{troco}) indica a devolução das moedas. Normalmente, \texttt{troco} permanece até que a devolução seja finalizada. Após a devolução, a FSM segue para FINALIZA.
+    
+    \item \textbf{FINALIZA}: Os sinais \texttt{clear\_acumulador} e \texttt{clear\_troco} podem ser ativados, zerando \texttt{total\_inserido} e \texttt{troco}. O \texttt{display} pode exibir uma mensagem de conclusão ou ser zerado. Após isso, retorna ao estado ESPERA, reiniciando o ciclo da FSM.
+\end{itemize}
+
+
+
+\paragraph{Datapath:}
+O caminho de dados implementa as operações aritméticas e lógicas necessárias para o funcionamento do sistema. Entre seus componentes, destacam-se:
+\begin{itemize}
+    \item \textbf{Registradores}: Armazenam informações como o \texttt{total\_inserido}, o \texttt{troco} e o \texttt{preco\_produto}.
+    \item \textbf{Unidades Aritméticas}: Somador, subtrator e comparador, que processam os valores monetários conforme a operação requerida.
+\end{itemize}
+
+A integração entre a FSM e o Datapath é realizada por meio de sinais de controle, que determinam quando as operações devem ser iniciadas ou interrompidas, garantindo a sincronização e correta execução das funcionalidades do sistema.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{vending-machine-diagrama caminho de dados.drawio.png}
+    \caption{DataPath}
+    \label{fig:enter-label}
+\end{figure}
+% -------------------------------------------------
+% SEÇÃO 3: PROJETO DO BLOCO DE CONTROLE
+% -------------------------------------------------
+\section{Projeto do Bloco de Controle}
+O bloco de controle é implementado através de uma máquina de estados finitos (FSM) de baixo nível, cuja função é gerar os sinais de controle que coordenam as operações do Datapath. Entre os sinais gerados, destacam-se:
+\begin{itemize}
+    \item \texttt{load\_acumulador}: Sinal que habilita a acumulação do valor da moeda.
+    \item \texttt{enable\_comparador}: Ativa o comparador para verificar se o crédito inserido é suficiente.
+    \item Outros sinais específicos para cada operação, como a liberação do produto e a devolução do troco.
+\end{itemize}
+
+\subsection{Detalhamento da FSM}
+A seguir, apresenta-se um breve detalhamento dos estados que compõem a FSM:
+\begin{itemize}
+    \item \textbf{S0 (ESPERA)}: Estado inicial em que o sistema aguarda a inserção de uma moeda ou a ativação do sinal \texttt{reset}.
+    \item \textbf{S1 (REGISTRA MOEDA)}: Ao detectar uma moeda, o sistema ativa o sinal \texttt{load\_acumulador} para somar o valor recebido ao \texttt{total\_inserido}.
+    \item \textbf{S2 (VERIFICA CRÉDITO)}: Com o valor acumulado, o sistema utiliza o comparador para verificar se o crédito é suficiente para a compra do produto selecionado.
+    \item \textbf{S3 (LIBERA PRODUTO/TROCO)}: Dependendo do resultado da verificação, o sistema libera o produto ou calcula e devolve o troco, acionando os sinais \texttt{liberar\_produto} e \texttt{liberar\_troco}, respectivamente.
+\end{itemize}
+
+Esta estrutura possibilita um fluxo de operação claro e bem definido, facilitando tanto a implementação em hardware quanto a análise do comportamento do sistema.
+
+% -------------------------------------------------
+% SEÇÃO 4: CONSIDERAÇÕES FINAIS
+% -------------------------------------------------
+\section{Considerações Finais}
+O presente trabalho descreveu de forma detalhada o projeto de uma máquina de vendas em nível RTL, enfatizando a importância da separação entre a lógica aritmética (Datapath) e a lógica de controle (FSM). A abordagem modular adotada permite:
+\begin{itemize}
+    \item \textbf{Facilidade de Manutenção:} A separação clara entre os módulos torna o diagnóstico e a correção de eventuais problemas mais diretos.
+    \item \textbf{Escalabilidade:} A arquitetura possibilita a incorporação de novas funcionalidades ou a modificação dos parâmetros existentes (como valores de moedas e preços de produtos) sem a necessidade de uma reformulação completa do sistema.
+    \item \textbf{Reutilização:} Componentes padronizados podem ser reutilizados em outros projetos, promovendo a eficiência no desenvolvimento de novos sistemas.
+\end{itemize}
+
+A implementação deste projeto contribui para a formação de uma base sólida em design digital e sistemas embarcados, áreas de crescente importância na engenharia moderna.
+
+% -------------------------------------------------
+% REFERÊNCIAS (caso necessário)
+% -------------------------------------------------
+%\begin{thebibliography}{9}
+%\bibitem{ref1} Nome do Autor, \textit{Título do Livro ou Artigo}, Editora, Ano.
+%\end{thebibliography}
+
+\end{document}
