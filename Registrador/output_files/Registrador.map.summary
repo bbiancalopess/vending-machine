@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Tue Feb 04 18:06:53 2025
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : Registrador
+Top-level Entity Name : Registrador
+Family : MAX 10
+Total logic elements : 8
+    Total combinational functions : 0
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

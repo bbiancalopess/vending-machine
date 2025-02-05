@@ -1,0 +1,307 @@
+# Reading pref.tcl
+# do Datapath_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:12 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Binary_to_BCD
+# -- Compiling architecture Behavioral of Binary_to_BCD
+# End time: 23:30:12 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:12 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector
+# -- Compiling architecture Behavioral of Mux_Msg_Selector
+# End time: 23:30:12 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:12 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Subtrator
+# -- Compiling architecture Behavioral of Subtrator
+# End time: 23:30:12 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Somador/Somador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:12 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Somador/Somador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Somador
+# -- Compiling architecture Behavioral of Somador
+# End time: 23:30:12 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:12 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 23:30:13 on Feb 04,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Displays/Mux_Displays.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:13 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Displays/Mux_Displays.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Displays
+# -- Compiling architecture Behavioral of Mux_Displays
+# End time: 23:30:13 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Decodificador_Produto/Decodificador_Produto.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:13 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Decodificador_Produto/Decodificador_Produto.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decodificador_Produto
+# -- Compiling architecture Behavioral of Decodificador_Produto
+# End time: 23:30:13 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:13 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Comparador_Maior_Igual
+# -- Compiling architecture Behavioral of Comparador_Maior_Igual
+# End time: 23:30:13 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:13 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Comparador_Maior
+# -- Compiling architecture Behavioral of Comparador_Maior
+# End time: 23:30:13 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:13 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Datapath
+# -- Compiling architecture Behavioral of Datapath
+# End time: 23:30:13 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:13 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Datapath_TB
+# -- Compiling architecture Behavioral of Datapath_TB
+# End time: 23:30:13 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Datapath_TB
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" Datapath_TB 
+# Start time: 23:30:13 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.datapath_tb(behavioral)
+# Loading work.datapath(behavioral)
+# Loading work.somador(behavioral)
+# Loading work.comparador_maior_igual(behavioral)
+# Loading work.comparador_maior(behavioral)
+# Loading work.decodificador_produto(behavioral)
+# Loading work.registrador(behavioral)
+# Loading work.subtrator(behavioral)
+# Loading work.mux_displays(behavioral)
+# Loading work.mux_msg_selector(behavioral)
+# Loading work.binary_to_bcd(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U6
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U6
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/UUT/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /datapath_tb/UUT/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /datapath_tb/UUT/U6
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U6
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 0  Instance: /datapath_tb
+# ** Error: Erro no Teste 1
+#    Time: 20 ns  Iteration: 0  Instance: /datapath_tb
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 2  Instance: /datapath_tb/UUT/U6
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 0  Instance: /datapath_tb
+# ** Error: Erro no Teste 2
+#    Time: 30 ns  Iteration: 0  Instance: /datapath_tb
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 1  Instance: /datapath_tb/UUT/U9/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 0  Instance: /datapath_tb
+# ** Error: Erro no Teste 3
+#    Time: 50 ns  Iteration: 0  Instance: /datapath_tb
+# ** Note: Teste concluído!
+#    Time: 50 ns  Iteration: 0  Instance: /datapath_tb
+# End time: 23:31:32 on Feb 04,2025, Elapsed time: 0:01:19
+# Errors: 3, Warnings: 61

@@ -1,0 +1,43 @@
+|Registrador
+clk => valor_armazenado[0]~reg0.CLK
+clk => valor_armazenado[1]~reg0.CLK
+clk => valor_armazenado[2]~reg0.CLK
+clk => valor_armazenado[3]~reg0.CLK
+clk => valor_armazenado[4]~reg0.CLK
+clk => valor_armazenado[5]~reg0.CLK
+clk => valor_armazenado[6]~reg0.CLK
+clk => valor_armazenado[7]~reg0.CLK
+reset => valor_armazenado[0]~reg0.ACLR
+reset => valor_armazenado[1]~reg0.ACLR
+reset => valor_armazenado[2]~reg0.ACLR
+reset => valor_armazenado[3]~reg0.ACLR
+reset => valor_armazenado[4]~reg0.ACLR
+reset => valor_armazenado[5]~reg0.ACLR
+reset => valor_armazenado[6]~reg0.ACLR
+reset => valor_armazenado[7]~reg0.ACLR
+load => valor_armazenado[7]~reg0.ENA
+load => valor_armazenado[6]~reg0.ENA
+load => valor_armazenado[5]~reg0.ENA
+load => valor_armazenado[4]~reg0.ENA
+load => valor_armazenado[3]~reg0.ENA
+load => valor_armazenado[2]~reg0.ENA
+load => valor_armazenado[1]~reg0.ENA
+load => valor_armazenado[0]~reg0.ENA
+dado[0] => valor_armazenado[0]~reg0.DATAIN
+dado[1] => valor_armazenado[1]~reg0.DATAIN
+dado[2] => valor_armazenado[2]~reg0.DATAIN
+dado[3] => valor_armazenado[3]~reg0.DATAIN
+dado[4] => valor_armazenado[4]~reg0.DATAIN
+dado[5] => valor_armazenado[5]~reg0.DATAIN
+dado[6] => valor_armazenado[6]~reg0.DATAIN
+dado[7] => valor_armazenado[7]~reg0.DATAIN
+valor_armazenado[0] <= valor_armazenado[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+valor_armazenado[1] <= valor_armazenado[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+valor_armazenado[2] <= valor_armazenado[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+valor_armazenado[3] <= valor_armazenado[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+valor_armazenado[4] <= valor_armazenado[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+valor_armazenado[5] <= valor_armazenado[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+valor_armazenado[6] <= valor_armazenado[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+valor_armazenado[7] <= valor_armazenado[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

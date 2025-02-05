@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "display_segments[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[20]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[16]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[8]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[12]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[21]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[17]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[9]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[13]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[22]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[18]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[10]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[14]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[23]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[19]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[11]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

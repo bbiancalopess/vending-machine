@@ -1,0 +1,201 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "valor_displays[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[8]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[9]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[16]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[17]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[18]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[19]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[20]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[21]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[22]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[23]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_anodes[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tem_troco",
+					"strict" : false
+				},
+				{
+					"name" : "product_selection[0]",
+					"strict" : false
+				},
+				{
+					"name" : "product_selection[1]",
+					"strict" : false
+				},
+				{
+					"name" : "product_selection[2]",
+					"strict" : false
+				},
+				{
+					"name" : "product_selection[3]",
+					"strict" : false
+				},
+				{
+					"name" : "estado_fsm[2]",
+					"strict" : false
+				},
+				{
+					"name" : "estado_fsm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estado_fsm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "clear_acumulador",
+					"strict" : false
+				},
+				{
+					"name" : "load_acumulador",
+					"strict" : false
+				},
+				{
+					"name" : "clear_troco",
+					"strict" : false
+				},
+				{
+					"name" : "load_troco",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[0]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[2]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

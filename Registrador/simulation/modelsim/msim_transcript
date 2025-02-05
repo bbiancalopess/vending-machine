@@ -1,0 +1,532 @@
+# Reading pref.tcl
+# do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:08:32 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:08:32 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:08:32 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:08:33 on Feb 04,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:08:33 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:10:31 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:10:31 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:10:31 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:10:31 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:10:32 on Feb 04,2025, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:10:32 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+# ** Error: Erro no Teste 2
+#    Time: 20 ns  Iteration: 0  Instance: /registrador_tb
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:36 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:11:36 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:36 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:11:36 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:11:38 on Feb 04,2025, Elapsed time: 0:01:06
+# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:11:38 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+# ** Error: Erro no Teste 2
+#    Time: 20 ns  Iteration: 0  Instance: /registrador_tb
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:07 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:12:08 on Feb 04,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:08 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:12:08 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:12:09 on Feb 04,2025, Elapsed time: 0:00:31
+# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:12:09 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+# ** Error: Erro no Teste 2
+#    Time: 20 ns  Iteration: 0  Instance: /registrador_tb
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:14:13 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:14:13 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:14:13 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:14:14 on Feb 04,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:14:15 on Feb 04,2025, Elapsed time: 0:02:06
+# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:14:15 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+# ** Error: Erro no Teste 2
+#    Time: 20 ns  Iteration: 0  Instance: /registrador_tb
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:15:28 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:15:28 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:15:28 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:15:28 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:15:29 on Feb 04,2025, Elapsed time: 0:01:14
+# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:15:29 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+# ** Error: Erro no Teste 2
+#    Time: 15 ns  Iteration: 0  Instance: /registrador_tb
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:16:32 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:16:32 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:16:32 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:16:32 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:16:34 on Feb 04,2025, Elapsed time: 0:01:05
+# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:16:34 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:18:41 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:18:41 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:18:41 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:18:41 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:18:42 on Feb 04,2025, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:18:42 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:20:08 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:20:08 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:20:08 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:20:08 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:20:09 on Feb 04,2025, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:20:09 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+do Registrador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:20:56 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 18:20:56 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:20:56 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_TB
+# -- Compiling architecture Behavioral of Registrador_TB
+# -- Loading entity Registrador
+# End time: 18:20:56 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Registrador_TB
+# End time: 18:20:57 on Feb 04,2025, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Registrador_TB 
+# Start time: 18:20:57 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registrador_tb(behavioral)
+# Loading work.registrador(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns
+# End time: 18:21:26 on Feb 04,2025, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0

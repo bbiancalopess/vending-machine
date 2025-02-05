@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "resultado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "resultado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "resultado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "resultado[3]",
+					"strict" : false
+				},
+				{
+					"name" : "resultado[4]",
+					"strict" : false
+				},
+				{
+					"name" : "resultado[5]",
+					"strict" : false
+				},
+				{
+					"name" : "resultado[6]",
+					"strict" : false
+				},
+				{
+					"name" : "resultado[7]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[0]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[0]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[1]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[2]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[2]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[3]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[3]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[4]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[5]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[6]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

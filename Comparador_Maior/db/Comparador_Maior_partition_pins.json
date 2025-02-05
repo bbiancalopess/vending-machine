@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sinal_maior",
+					"strict" : false
+				},
+				{
+					"name" : "preco_produto[7]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[7]",
+					"strict" : false
+				},
+				{
+					"name" : "preco_produto[6]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[6]",
+					"strict" : false
+				},
+				{
+					"name" : "preco_produto[5]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[5]",
+					"strict" : false
+				},
+				{
+					"name" : "preco_produto[4]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[4]",
+					"strict" : false
+				},
+				{
+					"name" : "preco_produto[3]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[3]",
+					"strict" : false
+				},
+				{
+					"name" : "preco_produto[2]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[2]",
+					"strict" : false
+				},
+				{
+					"name" : "preco_produto[1]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[1]",
+					"strict" : false
+				},
+				{
+					"name" : "preco_produto[0]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

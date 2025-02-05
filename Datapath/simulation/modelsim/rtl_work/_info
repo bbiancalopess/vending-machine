@@ -1,0 +1,490 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/simulation/modelsim
+Ebinary_to_bcd
+Z1 w1738714286
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z6 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd
+Z7 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd
+l0
+L5 1
+VTg7O2FC6D81n:zQ<J>Lf52
+!s100 :k<lB`;Rj:XJEC?XP`;Td2
+Z8 OV;C;2020.1;71
+31
+Z9 !s110 1738722612
+!i10b 1
+Z10 !s108 1738722612.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd|
+Z12 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 13 binary_to_bcd 0 22 Tg7O2FC6D81n:zQ<J>Lf52
+!i122 0
+l13
+L12 29
+VOLXH_:c2geQoTk]4AYMMB3
+!s100 ;:OR3A<i@EOZ:E7==[XPb3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecomparador_maior
+Z15 w1738701433
+R4
+R5
+!i122 8
+R0
+Z16 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd
+Z17 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd
+l0
+L4 1
+V>LHYXh<XhClC?DENR^2Kk3
+!s100 IJ;_EcNQEGaGQo4HCI@l23
+R8
+31
+Z18 !s110 1738722613
+!i10b 1
+Z19 !s108 1738722613.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd|
+Z21 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 16 comparador_maior 0 22 >LHYXh<XhClC?DENR^2Kk3
+!i122 8
+l13
+Z22 L12 4
+VJji2=O_]OkTGK3FDlE70D0
+!s100 d8G@f_ZF>dR3EUdH0@GB=0
+R8
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Ecomparador_maior_igual
+Z23 w1738700683
+R4
+R5
+!i122 7
+R0
+Z24 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd
+Z25 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd
+l0
+L4 1
+VA?0G2:Ne9Ed6XonDikQmF2
+!s100 Mo[;Q7F;P_;EKT_KK_RHX1
+R8
+31
+R18
+!i10b 1
+R19
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd|
+Z27 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 22 comparador_maior_igual 0 22 A?0G2:Ne9Ed6XonDikQmF2
+!i122 7
+l13
+R22
+VBX3;][cV?iB35b3L[mjBP2
+!s100 Fa>`GZze5DQKi3^@O93MI0
+R8
+31
+R18
+!i10b 1
+R19
+R26
+R27
+!i113 1
+R13
+R14
+Edatapath
+Z28 w1738722348
+R2
+R3
+R4
+R5
+!i122 9
+R0
+Z29 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath.vhd
+Z30 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath.vhd
+l0
+L5 1
+V<83[bNLTKR^mi=WbQSa_O3
+!s100 O8iR_Im7l8blL;YoCk06b2
+R8
+31
+R18
+!i10b 1
+R19
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath.vhd|
+Z32 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 8 datapath 0 22 <83[bNLTKR^mi=WbQSa_O3
+!i122 9
+l103
+L22 148
+Vh0WHD[PCACja<f<N2]l_91
+!s100 eZGWk_9fbaBNZPTkQ`Dfo2
+R8
+31
+R18
+!i10b 1
+R19
+R31
+R32
+!i113 1
+R13
+R14
+Edatapath_tb
+Z33 w1738722447
+R2
+R3
+R4
+R5
+!i122 10
+R0
+Z34 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath_TB.vhd
+Z35 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath_TB.vhd
+l0
+L5 1
+VIL86b]VY?<@DBLMSS627@3
+!s100 3i`FacCC[3fUNGb3`80zB0
+R8
+31
+R18
+!i10b 1
+R19
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath_TB.vhd|
+!s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath_TB.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 11 datapath_tb 0 22 IL86b]VY?<@DBLMSS627@3
+!i122 10
+l43
+L8 90
+VSjI;I;07kMczKL>TX?WUA0
+!s100 K_=OWdASAz5GfhFd0Kl[l1
+R8
+31
+R18
+!i10b 1
+R19
+R36
+Z37 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Datapath/Datapath_TB.vhd|
+!i113 1
+R13
+R14
+Edecodificador_produto
+Z38 w1738711750
+R4
+R5
+!i122 6
+R0
+Z39 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Decodificador_Produto/Decodificador_Produto.vhd
+Z40 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Decodificador_Produto/Decodificador_Produto.vhd
+l0
+L4 1
+VA5SQN@4c;WRINN_K_ihIJ1
+!s100 UR<^NeCP8KFEPO5PbbmB51
+R8
+31
+R18
+!i10b 1
+R19
+Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Decodificador_Produto/Decodificador_Produto.vhd|
+Z42 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Decodificador_Produto/Decodificador_Produto.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 21 decodificador_produto 0 22 A5SQN@4c;WRINN_K_ihIJ1
+!i122 6
+l12
+L11 39
+Vaaz;TME[cdnF68`?^0cdl1
+!s100 lzB>9n1zem]eWnlEU;W`A2
+R8
+31
+R18
+!i10b 1
+R19
+R41
+R42
+!i113 1
+R13
+R14
+Emux_displays
+Z43 w1738714048
+R2
+R3
+R4
+R5
+!i122 5
+R0
+Z44 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Displays/Mux_Displays.vhd
+Z45 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Displays/Mux_Displays.vhd
+l0
+L5 1
+VbfJFOF2<6MNPzkQ2N`9U]1
+!s100 I@?`OCSd2HlN79kPBHX<X1
+R8
+31
+R18
+!i10b 1
+R19
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Displays/Mux_Displays.vhd|
+Z47 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Displays/Mux_Displays.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 12 mux_displays 0 22 bfJFOF2<6MNPzkQ2N`9U]1
+!i122 5
+l17
+L14 69
+VJzQe5hRX:^ZKHgU=n3LYA1
+!s100 ?B`2EYh@V6a[Q=FA=KKPA2
+R8
+31
+R18
+!i10b 1
+R19
+R46
+R47
+!i113 1
+R13
+R14
+Emux_msg_selector
+Z48 w1738717233
+R2
+R3
+R4
+R5
+!i122 1
+R0
+Z49 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd
+Z50 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd
+l0
+L5 1
+VZ^11>81>KACR_iPnLY`bC0
+!s100 ;jF=L4f_DXM>GlU];z<zW3
+R8
+31
+R9
+!i10b 1
+R10
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd|
+Z52 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 16 mux_msg_selector 0 22 Z^11>81>KACR_iPnLY`bC0
+!i122 1
+l38
+L16 62
+VfdD`iTIlU<BCYEo1CM0WP1
+!s100 N67=kCL1UZEi5SJBBIC4X3
+R8
+31
+R9
+!i10b 1
+R10
+R51
+R52
+!i113 1
+R13
+R14
+Eregistrador
+Z53 w1738703123
+R4
+R5
+!i122 4
+R0
+Z54 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd
+Z55 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd
+l0
+L4 1
+VM]F?LOSI]9k[>OIGIc82E3
+!s100 hQ>ZUYk<3kbg`g2M@=Qk50
+R8
+31
+R9
+!i10b 1
+R10
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd|
+Z57 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Registrador/Registrador.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 11 registrador 0 22 M]F?LOSI]9k[>OIGIc82E3
+!i122 4
+l15
+L14 13
+VcJ65Jb_h<RP8RH]I>]UMl0
+!s100 ;1PdY85f^BV?:MaDHfR:>2
+R8
+31
+R9
+!i10b 1
+R10
+R56
+R57
+!i113 1
+R13
+R14
+Esomador
+Z58 w1738700103
+R2
+R3
+R4
+R5
+!i122 3
+R0
+Z59 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Somador/Somador.vhd
+Z60 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Somador/Somador.vhd
+l0
+L5 1
+VegL?N]7X?OTJ@SQ7fDG0T3
+!s100 >Md5LUcW4:FbHeaZL5^iY0
+R8
+31
+R9
+!i10b 1
+R10
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Somador/Somador.vhd|
+Z62 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Somador/Somador.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 7 somador 0 22 egL?N]7X?OTJ@SQ7fDG0T3
+!i122 3
+l14
+Z63 L13 4
+V]h=OB>^]R0<M=W:m7J?m03
+!s100 Vdnc`^Xi;1no<dDWbB6P20
+R8
+31
+R9
+!i10b 1
+R10
+R61
+R62
+!i113 1
+R13
+R14
+Esubtrator
+Z64 w1738702009
+R2
+R3
+R4
+R5
+!i122 2
+R0
+Z65 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator.vhd
+Z66 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator.vhd
+l0
+L5 1
+VSP1<?540XLoQ?>UzKK:4l3
+!s100 Y@83AUYgMJh4^eEU?:XlA2
+R8
+31
+R9
+!i10b 1
+R10
+Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator.vhd|
+Z68 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 9 subtrator 0 22 SP1<?540XLoQ?>UzKK:4l3
+!i122 2
+l14
+R63
+VPgi2az:gnN9ZzD>fzDLZ?1
+!s100 Tn9FK>QE_i22LAUzRJ1L40
+R8
+31
+R9
+!i10b 1
+R10
+R67
+R68
+!i113 1
+R13
+R14

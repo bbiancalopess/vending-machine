@@ -1,0 +1,20 @@
+|Comparador_Maior_Igual
+total_inserido[0] => LessThan0.IN8
+total_inserido[1] => LessThan0.IN7
+total_inserido[2] => LessThan0.IN6
+total_inserido[3] => LessThan0.IN5
+total_inserido[4] => LessThan0.IN4
+total_inserido[5] => LessThan0.IN3
+total_inserido[6] => LessThan0.IN2
+total_inserido[7] => LessThan0.IN1
+preco_produto[0] => LessThan0.IN16
+preco_produto[1] => LessThan0.IN15
+preco_produto[2] => LessThan0.IN14
+preco_produto[3] => LessThan0.IN13
+preco_produto[4] => LessThan0.IN12
+preco_produto[5] => LessThan0.IN11
+preco_produto[6] => LessThan0.IN10
+preco_produto[7] => LessThan0.IN9
+sinal_maior_igual << LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

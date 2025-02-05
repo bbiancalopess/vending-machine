@@ -1,0 +1,334 @@
+# Reading pref.tcl
+# do Mux_Msg_Selector_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:01:37 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Binary_to_BCD
+# -- Compiling architecture Behavioral of Binary_to_BCD
+# End time: 22:01:37 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:01:38 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector
+# -- Compiling architecture Behavioral of Mux_Msg_Selector
+# End time: 22:01:38 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:01:38 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector_TB
+# -- Compiling architecture Behavioral of Mux_Msg_Selector_TB
+# End time: 22:01:38 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Mux_Msg_Selector_TB
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Mux_Msg_Selector_TB 
+# Start time: 22:01:38 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mux_msg_selector_tb(behavioral)
+# Loading work.mux_msg_selector(behavioral)
+# Loading work.binary_to_bcd(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns
+# ** Error: Erro no estado ESPERA
+#    Time: 10 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado SELECAO
+#    Time: 20 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado TROCO
+#    Time: 30 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado LIBERA_PRODUTO
+#    Time: 40 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado ERRO
+#    Time: 50 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado FINALIZADO
+#    Time: 60 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado EXIBE_PRECO_PRODUTO
+#    Time: 70 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Note: Teste concluído!
+#    Time: 80 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+do Mux_Msg_Selector_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:04:30 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Binary_to_BCD
+# -- Compiling architecture Behavioral of Binary_to_BCD
+# End time: 22:04:30 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:04:30 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector
+# -- Compiling architecture Behavioral of Mux_Msg_Selector
+# End time: 22:04:30 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:04:30 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector_TB
+# -- Compiling architecture Behavioral of Mux_Msg_Selector_TB
+# End time: 22:04:30 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Mux_Msg_Selector_TB
+# End time: 22:04:32 on Feb 04,2025, Elapsed time: 0:02:54
+# Errors: 7, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Mux_Msg_Selector_TB 
+# Start time: 22:04:32 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mux_msg_selector_tb(behavioral)
+# Loading work.mux_msg_selector(behavioral)
+# Loading work.binary_to_bcd(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns
+# ** Error: Erro no estado ESPERA
+#    Time: 5 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado SELECAO
+#    Time: 15 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado TROCO
+#    Time: 25 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado LIBERA_PRODUTO
+#    Time: 35 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado ERRO
+#    Time: 45 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado FINALIZADO
+#    Time: 55 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado EXIBE_PRECO_PRODUTO
+#    Time: 65 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Note: Teste concluído!
+#    Time: 75 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+do Mux_Msg_Selector_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:07:22 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Binary_to_BCD
+# -- Compiling architecture Behavioral of Binary_to_BCD
+# End time: 22:07:22 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:07:22 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector
+# -- Compiling architecture Behavioral of Mux_Msg_Selector
+# End time: 22:07:22 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:07:22 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector_TB
+# -- Compiling architecture Behavioral of Mux_Msg_Selector_TB
+# End time: 22:07:22 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Mux_Msg_Selector_TB
+# End time: 22:07:23 on Feb 04,2025, Elapsed time: 0:02:51
+# Errors: 7, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Mux_Msg_Selector_TB 
+# Start time: 22:07:23 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mux_msg_selector_tb(behavioral)
+# Loading work.mux_msg_selector(behavioral)
+# Loading work.binary_to_bcd(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns
+# ** Error: Erro no estado SELECAO
+#    Time: 15 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado TROCO
+#    Time: 25 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado LIBERA_PRODUTO
+#    Time: 35 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado ERRO
+#    Time: 45 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado FINALIZADO
+#    Time: 55 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Error: Erro no estado EXIBE_PRECO_PRODUTO
+#    Time: 65 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# ** Note: Teste concluído!
+#    Time: 75 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+do Mux_Msg_Selector_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:38 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Binary_To_BCD/Binary_To_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Binary_to_BCD
+# -- Compiling architecture Behavioral of Binary_to_BCD
+# End time: 22:09:38 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:38 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector
+# -- Compiling architecture Behavioral of Mux_Msg_Selector
+# End time: 22:09:38 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:38 on Feb 04,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Mux_Msg_Selector/Mux_Msg_Selector_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Mux_Msg_Selector_TB
+# -- Compiling architecture Behavioral of Mux_Msg_Selector_TB
+# End time: 22:09:38 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Mux_Msg_Selector_TB
+# End time: 22:09:39 on Feb 04,2025, Elapsed time: 0:02:16
+# Errors: 6, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Mux_Msg_Selector_TB 
+# Start time: 22:09:39 on Feb 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mux_msg_selector_tb(behavioral)
+# Loading work.mux_msg_selector(behavioral)
+# Loading work.binary_to_bcd(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns
+# ** Note: Teste concluído!
+#    Time: 75 ns  Iteration: 0  Instance: /mux_msg_selector_tb
+# End time: 22:10:08 on Feb 04,2025, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
