@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "estado_fsm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estado_fsm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "estado_fsm[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_insuficiente",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "coin_inserted",
+					"strict" : false
+				},
+				{
+					"name" : "tem_troco",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

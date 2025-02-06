@@ -29,4 +29,68 @@ begin
 		end if;
 	end process;
 	
-	process(estado_atual, coin<
+		process(estado_atual, coin_inserted, product_selected, saldo_insuficiente, tem_troco)
+	begin
+		case estado_atual is
+			when ESPERA =>
+				if coin_inserted = '1' then
+					proximo_estado <= REGISTRA_MOEDA;
+				else
+					proximo_estado <= ESPERA;
+				end if;
+
+			when REGISTRA_MOEDA =>
+				proximo_estado <= VERIFICA_CREDITO;
+
+			when VERIFICA_CREDITO =>
+				if saldo_insuficiente = '1' then
+					proximo_estado <= ERRO_VALOR;
+				else
+					proximo_estado <= LIBERA_PRODUTO;
+				end if;
+
+			when ERRO_VALOR =>
+				if coin_inserted = '1' then
+					proximo_estado <= REGISTRA_MOEDA;
+				else
+					proximo_estado <= ESPERA;
+				end if;
+
+			when LIBERA_PRODUTO =>
+				if tem_troco = '1' then
+					proximo_estado <= CALCULA_TROCO;
+				else
+					proximo_estado <= FINALIZA;
+				end if;
+
+			when CALCULA_TROCO =>
+				proximo_estado <= RETORNA_TROCO;
+
+			when RETORNA_TROCO =>
+				proximo_estado <= FINALIZA;
+
+			when FINALIZA =>
+				proximo_estado <= ESPERA;
+
+			when others =>
+				proximo_estado <= ESPERA;
+		end case;
+	end process;
+
+	-- Saída do estado atual para debug
+	process(estado_atual)
+	begin
+		case estado_atual is
+			when ESPERA         => estado_fsm <= "000";
+			when REGISTRA_MOEDA => estado_fsm <= "001";
+			when VERIFICA_CREDITO => estado_fsm <= "010";
+			when LIBERA_PRODUTO => estado_fsm <= "011";
+			when ERRO_VALOR     => estado_fsm <= "100";
+			when CALCULA_TROCO  => estado_fsm <= "101";
+			when RETORNA_TROCO  => estado_fsm <= "110";
+			when FINALIZA       => estado_fsm <= "111";
+			when others         => estado_fsm <= "000";
+		end case;
+	end process;
+
+end Behavioral;
