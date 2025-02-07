@@ -71,10 +71,6 @@ set_global_assignment -name EDA_TEST_BENCH_NAME Subtrator_Registrador_TB -sectio
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Subtrator_Registrador_TB
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 ns" -section_id Subtrator_Registrador_TB
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Subtrator_Registrador_TB -section_id Subtrator_Registrador_TB
-set_global_assignment -name EDA_TEST_BENCH_NAME Mux_Selector_Displays_TB -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Mux_Selector_Displays_TB
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 ns" -section_id Mux_Selector_Displays_TB
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Mux_Selector_Displays_TB -section_id Mux_Selector_Displays_TB
 set_global_assignment -name VHDL_FILE ../Demux/Demux.vhd
 set_global_assignment -name VHDL_FILE ../Binary_8_To_BCD/Binary_8_To_BCD.vhd
 set_global_assignment -name VHDL_FILE ../Binary_4_To_BCD/Binary_4_to_BCD.vhd
@@ -95,4 +91,3 @@ set_global_assignment -name EDA_TEST_BENCH_FILE Datapath_TB.vhd -section_id Data
 set_global_assignment -name EDA_TEST_BENCH_FILE Somador_Registrador_TB.vhd -section_id Somador_Registrador_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE Decodificador_Comparador_TB.vhd -section_id Decodificador_Comparador_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE Subtrator_Registrador_TB.vhd -section_id Subtrator_Registrador_TB
-set_global_assignment -name EDA_TEST_BENCH_FILE Mux_Selector_Displays_TB.vhd -section_id Mux_Selector_Displays_TB

@@ -17,6 +17,19 @@ entity Vending_Machine is
 end Vending_Machine;
 
 architecture Behavioral of Vending_Machine is 
+	-- Sinais internos
+	signal select_demux 					: STD_LOGIC;
+	signal load_saldo 					: STD_LOGIC;
+	signal clear_saldo					: STD_LOGIC;
+	signal load_troco_reg				: STD_LOGIC;
+	signal clear_troco_reg 				: STD_LOGIC;
+	signal coin_inserted					: STD_LOGIC;
+	signal insert_more_coins			: STD_LOGIC;
+	signal product_chosen				: STD_LOGIC;
+	signal dont_insert_more_coins		: STD_LOGIC;
+	signal compare_maior_igual			: STD_LOGIC;
+	signal compare_maior					: STD_LOGIC;
+	signal estado_fsm						: STD_LOGIC_VECTOR(2 downto 0);
 	
 	-- Componentes
 	component Datapath

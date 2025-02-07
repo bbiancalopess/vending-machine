@@ -8,26 +8,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/simulation/modelsim
+Z0 dC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/simulation/modelsim
 Ecomparador_maior
 Z1 w1738701433
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z4 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd
-Z5 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd
+Z4 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd
+Z5 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd
 l0
 L4 1
 V>LHYXh<XhClC?DENR^2Kk3
 !s100 IJ;_EcNQEGaGQo4HCI@l23
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1738701854
+Z7 !s110 1738953691
 !i10b 1
-Z8 !s108 1738701854.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd|
-Z10 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior.vhd|
+Z8 !s108 1738953690.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd|
+Z10 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
@@ -56,19 +56,19 @@ R2
 R3
 !i122 1
 R0
-Z15 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior_TB.vhd
-Z16 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior_TB.vhd
+Z15 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior_TB.vhd
+Z16 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior_TB.vhd
 l0
 L4 1
 VL@_LaREL;R[>`0;VJa;]51
 !s100 IS6JZNhAA?;]gfZgiBZnK1
 R6
 31
-Z17 !s110 1738701855
+R7
 !i10b 1
-Z18 !s108 1738701855.000000
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior_TB.vhd|
-!s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior_TB.vhd|
+Z17 !s108 1738953691.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior_TB.vhd|
+!s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior_TB.vhd|
 !i113 1
 R11
 R12
@@ -84,11 +84,11 @@ VDJlbaaC9[N>PA[4cUa=Wh1
 !s100 a9Zf6KNZfKNa[0:QWZ;`N1
 R6
 31
-R17
+R7
 !i10b 1
+R17
 R18
-R19
-Z20 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Comparador_Maior/Comparador_Maior_TB.vhd|
+Z19 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior_TB.vhd|
 !i113 1
 R11
 R12

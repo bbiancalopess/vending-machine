@@ -23,17 +23,20 @@ entity fsm is
 end fsm;
 
 architecture Behavioral of fsm is 
-	type estado_type is (ESPERA, REGISTRA_MOEDA, VERIFICA_CREDITO, 
-		LIBERA_PRODUTO, ERRO_VALOR, CALCULA_TROCO, RETORNA_TROCO, FINALIZA);
+	type estado_type is (ESPERA_STATE, REGISTRA_MOEDA_STATE, VERIFICA_CREDITO_STATE, 
+		LIBERA_PRODUTO_STATE, ERRO_VALOR_STATE, CALCULA_TROCO_STATE, RETORNA_TROCO_STATE, FINALIZA_STATE);
 	signal estado_atual, proximo_estado : estado_type;
+	signal reset : STD_LOGIC; -- Sinal de reset interno
 begin
+	-- Lógica de reset
+	reset <= '1' when (coin_inserted = '1' and product_chosen = '1') or
+							(insert_more_coins = '1' and dont_insert_more_coins = '1')
+					else '0';
 	-- Processo para atualização do estado atual
-	process(clk, coin_inserted, insert_more_coins, product_chosen, dont_insert_more_coins)
+	process(clk, reset)
 	begin
-		if coin_inserted = '1' && product_chosen = '1' then
-			estado_atual <= FINALIZA;
-		elsif insert_more_coins = '1' && dont_insert_more_coins = '1' then
-			estado_atual <= FINALIZA;
+		if reset = '1' then
+			estado_atual <= FINALIZA_STATE;
 		elsif rising_edge(clk) then 
 			estado_atual <= proximo_estado;
 		end if;
@@ -42,131 +45,92 @@ begin
 	process(estado_atual, coin_inserted, insert_more_coins, product_chosen, dont_insert_more_coins, compare_maior_igual, compare_maior)
 	begin
 		case estado_atual is
-			when ESPERA =>
+			when ESPERA_STATE =>
 				if coin_inserted = '1' then
-					proximo_estado <= REGISTRA_MOEDA;
+					proximo_estado <= REGISTRA_MOEDA_STATE;
 				elsif product_chosen = '1' then
-					proximo_estado <= VERIFICA_CREDITO;
+					proximo_estado <= VERIFICA_CREDITO_STATE;
 				else
-					proximo_estado <= ESPERA;
+					proximo_estado <= ESPERA_STATE;
 				end if;
 
-			when REGISTRA_MOEDA =>
-				proximo_estado <= ESPERA;
+			when REGISTRA_MOEDA_STATE =>
+				proximo_estado <= ESPERA_STATE;
 
-			when VERIFICA_CREDITO =>
+			when VERIFICA_CREDITO_STATE =>
 				if compare_maior_igual = '1' then
-					proximo_estado <= LIBERA_PRODUTO;
+					proximo_estado <= LIBERA_PRODUTO_STATE;
 				else
-					proximo_estado <= ERRO_VALOR;
+					proximo_estado <= ERRO_VALOR_STATE;
 				end if;
 
-			when ERRO_VALOR =>
+			when ERRO_VALOR_STATE =>
 				if insert_more_coins = '1' then
-					proximo_estado <= ESPERA;
-				elsif dont_insert_more_coins = '1'
-					proximo_estado <= FINALIZA;
+					proximo_estado <= ESPERA_STATE;
+				elsif dont_insert_more_coins = '1' then
+					proximo_estado <= FINALIZA_STATE;
 				else 
-					proximo_estado <= ERRO_VALOR;
+					proximo_estado <= ERRO_VALOR_STATE;
 				end if;
 
-			when LIBERA_PRODUTO =>
+			when LIBERA_PRODUTO_STATE =>
 				if compare_maior = '1' then
-					proximo_estado <= CALCULA_TROCO;
+					proximo_estado <= CALCULA_TROCO_STATE;
 				else
-					proximo_estado <= FINALIZA;
+					proximo_estado <= FINALIZA_STATE;
 				end if;
 
-			when CALCULA_TROCO =>
-				proximo_estado <= RETORNA_TROCO;
+			when CALCULA_TROCO_STATE =>
+				proximo_estado <= RETORNA_TROCO_STATE;
 
-			when RETORNA_TROCO =>
-				proximo_estado <= FINALIZA;
+			when RETORNA_TROCO_STATE =>
+				proximo_estado <= FINALIZA_STATE;
 
-			when FINALIZA =>
-				proximo_estado <= ESPERA;
+			when FINALIZA_STATE =>
+				proximo_estado <= ESPERA_STATE;
 
 			when others =>
-				proximo_estado <= ESPERA;
+				proximo_estado <= ESPERA_STATE;
 		end case;
 	end process;
 
 	-- Saída do estado atual para debug
 	process(estado_atual)
 	begin
+		-- Valores padrão
+		select_demux <= '0';
+		load_saldo <= '0';
+		clear_saldo <= '0';
+		load_troco_reg <= '0';
+		clear_troco_reg <= '0';
+		retorna_troco <= '0';
+		libera_produto <= '0';
+		
 		case estado_atual is
-			when ESPERA         => 
+			when ESPERA_STATE         => 
 				estado_fsm <= "000";
-				select_demux <= '0';
-				load_saldo <= '0';
-				clear_saldo <= '0';
-				load_troco_reg <= '0';
-				clear_troco_reg <= '0';
-				retorna_troco <= '0';
-				libera_produto <= '0';
-			when REGISTRA_MOEDA => 
+				
+			when REGISTRA_MOEDA_STATE => 
 				estado_fsm <= "001";
-				select_demux <= '0';
 				load_saldo <= '1';
-				clear_saldo <= '0';
-				load_troco_reg <= '0';
-				clear_troco_reg <= '0';
-				retorna_troco <= '0';
-				libera_produto <= '0';
-			when VERIFICA_CREDITO => 
+			when VERIFICA_CREDITO_STATE => 
 				estado_fsm <= "010";
-				select_demux <= '0';
-				load_saldo <= '0';
-				clear_saldo <= '0';
-				load_troco_reg <= '0';
-				clear_troco_reg <= '0';
-				retorna_troco <= '0';
-				libera_produto <= '0';
-			when LIBERA_PRODUTO => 
+			when LIBERA_PRODUTO_STATE => 
 				estado_fsm <= "011";
-				select_demux <= '0';
-				load_saldo <= '0';
-				clear_saldo <= '0';
-				load_troco_reg <= '0';
-				clear_troco_reg <= '0';
-				retorna_troco <= '0';
 				libera_produto <= '1';
-			when ERRO_VALOR     => 
+			when ERRO_VALOR_STATE     => 
 				estado_fsm <= "100";
 				select_demux <= '1';
-				load_saldo <= '0';
-				clear_saldo <= '0';
-				load_troco_reg <= '0';
-				clear_troco_reg <= '0';
-				retorna_troco <= '0';
-				libera_produto <= '0';
-			when CALCULA_TROCO  => 
+			when CALCULA_TROCO_STATE  => 
 				estado_fsm <= "101";
-				select_demux <= '0';
-				load_saldo <= '0';
-				clear_saldo <= '0';
 				load_troco_reg <= '1';
-				clear_troco_reg <= '0';
-				retorna_troco <= '0';
-				libera_produto <= '0';
-			when RETORNA_TROCO  => 
+			when RETORNA_TROCO_STATE  => 
 				estado_fsm <= "110";
-				select_demux <= '0';
-				load_saldo <= '0';
-				clear_saldo <= '0';
-				load_troco_reg <= '0';
-				clear_troco_reg <= '0';
 				retorna_troco <= '1';
-				libera_produto <= '0';
-			when FINALIZA       => 
+			when FINALIZA_STATE       => 
 				estado_fsm <= "111";
-				select_demux <= '0';
-				load_saldo <= '0';
 				clear_saldo <= '1';
-				load_troco_reg <= '0';
 				clear_troco_reg <= '1';
-				retorna_troco <= '0';
-				libera_produto <= '0';
 			when others         => 
 				estado_fsm <= "000";
 		end case;

@@ -1,0 +1,32 @@
+|fsm
+clk => estado_atual~1.DATAIN
+coin_inserted => reset.IN0
+coin_inserted => proximo_estado.OUTPUTSELECT
+coin_inserted => proximo_estado.OUTPUTSELECT
+coin_inserted => proximo_estado.REGISTRA_MOEDA_STATE.DATAB
+insert_more_coins => reset.IN0
+insert_more_coins => proximo_estado.OUTPUTSELECT
+insert_more_coins => proximo_estado.OUTPUTSELECT
+insert_more_coins => Selector0.IN5
+product_chosen => reset.IN1
+product_chosen => proximo_estado.DATAA
+product_chosen => proximo_estado.DATAA
+dont_insert_more_coins => reset.IN1
+dont_insert_more_coins => proximo_estado.DATAA
+dont_insert_more_coins => proximo_estado.DATAA
+compare_maior_igual => proximo_estado.LIBERA_PRODUTO_STATE.DATAB
+compare_maior_igual => Selector1.IN1
+compare_maior => proximo_estado.CALCULA_TROCO_STATE.DATAB
+compare_maior => Selector2.IN3
+select_demux <= select_demux.DB_MAX_OUTPUT_PORT_TYPE
+load_saldo <= load_saldo.DB_MAX_OUTPUT_PORT_TYPE
+clear_saldo <= clear_saldo.DB_MAX_OUTPUT_PORT_TYPE
+load_troco_reg <= load_troco_reg.DB_MAX_OUTPUT_PORT_TYPE
+clear_troco_reg <= clear_troco_reg.DB_MAX_OUTPUT_PORT_TYPE
+retorna_troco <= retorna_troco.DB_MAX_OUTPUT_PORT_TYPE
+libera_produto <= libera_produto.DB_MAX_OUTPUT_PORT_TYPE
+estado_fsm[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+estado_fsm[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+estado_fsm[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+

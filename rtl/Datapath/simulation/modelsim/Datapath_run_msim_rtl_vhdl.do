@@ -17,9 +17,9 @@ vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machin
 vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd}
 vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd}
 
-vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath_TB.vhd}
+vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Mux_Selector_Displays_TB.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Datapath_TB
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Mux_Selector_Displays_TB
 
 add wave *
 view structure

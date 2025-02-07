@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fsm
-Thu Feb 06 22:37:23 2025
+Fri Feb 07 14:53:55 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,7 +10,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |fsm|estado_atual
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -37,22 +44,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Feb 06 22:37:23 2025           ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 07 14:53:55 2025       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; fsm                                         ;
 ; Top-level Entity Name              ; fsm                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 15                                          ;
+;     Total combinational functions  ; 14                                          ;
+;     Dedicated logic registers      ; 8                                           ;
+; Total registers                    ; 8                                           ;
+; Total pins                         ; 17                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -151,11 +158,124 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; fsm.vhd                          ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 15    ;
+;                                             ;       ;
+; Total combinational functions               ; 14    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 7     ;
+;     -- 3 input functions                    ; 4     ;
+;     -- <=2 input functions                  ; 3     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 14    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 8     ;
+;     -- Dedicated logic registers            ; 8     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 17    ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; reset ;
+; Maximum fan-out                             ; 8     ;
+; Total fan-out                               ; 97    ;
+; Average fan-out                             ; 1.73  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |fsm                       ; 14 (14)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 17   ; 0            ; 0          ; |fsm                ; fsm         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |fsm|estado_atual                                                                                                                                                                                                                                                                                 ;
++-------------------------------------+---------------------------+----------------------------------+----------------------------------+-------------------------------+-----------------------------------+-------------------------------------+-----------------------------------+-----------------------------+
+; Name                                ; estado_atual.ESPERA_STATE ; estado_atual.RETORNA_TROCO_STATE ; estado_atual.CALCULA_TROCO_STATE ; estado_atual.ERRO_VALOR_STATE ; estado_atual.LIBERA_PRODUTO_STATE ; estado_atual.VERIFICA_CREDITO_STATE ; estado_atual.REGISTRA_MOEDA_STATE ; estado_atual.FINALIZA_STATE ;
++-------------------------------------+---------------------------+----------------------------------+----------------------------------+-------------------------------+-----------------------------------+-------------------------------------+-----------------------------------+-----------------------------+
+; estado_atual.FINALIZA_STATE         ; 0                         ; 0                                ; 0                                ; 0                             ; 0                                 ; 0                                   ; 0                                 ; 0                           ;
+; estado_atual.REGISTRA_MOEDA_STATE   ; 0                         ; 0                                ; 0                                ; 0                             ; 0                                 ; 0                                   ; 1                                 ; 1                           ;
+; estado_atual.VERIFICA_CREDITO_STATE ; 0                         ; 0                                ; 0                                ; 0                             ; 0                                 ; 1                                   ; 0                                 ; 1                           ;
+; estado_atual.LIBERA_PRODUTO_STATE   ; 0                         ; 0                                ; 0                                ; 0                             ; 1                                 ; 0                                   ; 0                                 ; 1                           ;
+; estado_atual.ERRO_VALOR_STATE       ; 0                         ; 0                                ; 0                                ; 1                             ; 0                                 ; 0                                   ; 0                                 ; 1                           ;
+; estado_atual.CALCULA_TROCO_STATE    ; 0                         ; 0                                ; 1                                ; 0                             ; 0                                 ; 0                                   ; 0                                 ; 1                           ;
+; estado_atual.RETORNA_TROCO_STATE    ; 0                         ; 1                                ; 0                                ; 0                             ; 0                                 ; 0                                   ; 0                                 ; 1                           ;
+; estado_atual.ESPERA_STATE           ; 1                         ; 0                                ; 0                                ; 0                             ; 0                                 ; 0                                   ; 0                                 ; 1                           ;
++-------------------------------------+---------------------------+----------------------------------+----------------------------------+-------------------------------+-----------------------------------+-------------------------------------+-----------------------------------+-----------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 17                          ;
+; cycloneiii_ff         ; 8                           ;
+;     CLR               ; 8                           ;
+; cycloneiii_lcell_comb ; 18                          ;
+;     normal            ; 18                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 7                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.70                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -164,24 +284,28 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Feb 06 22:37:15 2025
+    Info: Processing started: Fri Feb 07 14:53:47 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fsm -c fsm
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Error (10500): VHDL syntax error at fsm.vhd(33) near text "&";  expecting "(", or an identifier, or  unary operator File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd Line: 33
-Error (10500): VHDL syntax error at fsm.vhd(35) near text "elsif";  expecting "end", or "(", or an identifier ("elsif" is a reserved keyword), or a sequential statement File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd Line: 35
-Error (10500): VHDL syntax error at fsm.vhd(37) near text "elsif";  expecting "end", or "(", or an identifier ("elsif" is a reserved keyword), or a sequential statement File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd Line: 37
-Error (10500): VHDL syntax error at fsm.vhd(37) near text "then";  expecting "(", or "'", or "." File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd Line: 37
-Error (10500): VHDL syntax error at fsm.vhd(39) near text "if";  expecting "process" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd Line: 39
-Error (10500): VHDL syntax error at fsm.vhd(68) near text "proximo_estado";  expecting "then" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd Line: 68
-Info (12021): Found 0 design units, including 0 entities, in source file fsm.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
+    Info (12022): Found design unit 1: fsm-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd Line: 25
+    Info (12023): Found entity 1: fsm File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fsm_tb.vhd
-    Info (12022): Found design unit 1: fsm_tb-tb File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm_tb.vhd Line: 8
-    Info (12023): Found entity 1: fsm_tb File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm_tb.vhd Line: 5
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
-    Error: Peak virtual memory: 4776 megabytes
-    Error: Processing ended: Thu Feb 06 22:37:23 2025
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:20
+    Info (12022): Found design unit 1: fsm_tb-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm_tb.vhd Line: 7
+    Info (12023): Found entity 1: fsm_tb File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm_tb.vhd Line: 4
+Info (12127): Elaborating entity "fsm" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Fri Feb 07 14:53:55 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 

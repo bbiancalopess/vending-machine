@@ -1,0 +1,154 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/simulation/modelsim
+Ebinary_4_to_bcd
+Z1 w1738868729
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 ]LY<>e3?`4Wb8dl1GV_X90
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 `f]nQdYHZLbCG_>oYeZOo2
+!i122 0
+R0
+Z8 8Binary_4_to_BCD.vho
+Z9 FBinary_4_to_BCD.vho
+l0
+L89 1
+VmGY3KS^UE4c>;zmaNz:CL3
+!s100 G3>9@2;9IL[eXmZ[TTeAJ2
+Z10 OV;C;2020.1;71
+31
+Z11 !s110 1738953519
+!i10b 1
+Z12 !s108 1738953519.000000
+Z13 !s90 -reportprogress|300|-93|-work|work|Binary_4_to_BCD.vho|
+Z14 !s107 Binary_4_to_BCD.vho|
+!i113 1
+Z15 o-93 -work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 15 binary_4_to_bcd 0 22 mGY3KS^UE4c>;zmaNz:CL3
+!i122 0
+l149
+L111 299
+VggfXj?_dcJnZO]`;2WB111
+!s100 3XAGRK0>KnlDQlHEPJba@3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ebinary_4_to_bcd_tb
+Z17 w1738862622
+Z18 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z19 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R5
+R6
+!i122 1
+R0
+Z20 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd
+Z21 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd
+l0
+L5 1
+VI6Xm@j[9`JoUGilCgeBKE3
+!s100 Q[We8l@lQf3aFL^n5_7Qh0
+R10
+31
+Z22 !s110 1738953520
+!i10b 1
+Z23 !s108 1738953520.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
+!s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
+!i113 1
+R15
+R16
+Abehavioral
+R18
+R19
+R5
+R6
+DEx4 work 18 binary_4_to_bcd_tb 0 22 I6Xm@j[9`JoUGilCgeBKE3
+!i122 1
+l21
+L8 64
+Vii_a8R:Vb=UhegHdf<H`D2
+!s100 Em2FXz>1`>1CTk3a97_970
+R10
+31
+R22
+!i10b 1
+R23
+R24
+Z25 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
+!i113 1
+R15
+R16
+Ehard_block
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+!i122 0
+R0
+R8
+R9
+l0
+L35 1
+VH73DDHU2ac^:D?]T;@N=M3
+!s100 3A]XnMhF<;9mKUe5mn3aM1
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 H73DDHU2ac^:D?]T;@N=M3
+!i122 0
+l76
+L54 28
+V:9n9ma92JRcO^oG6nb?k`2
+!s100 >:Wi^nX[YiN=@>>JC6K_83
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16

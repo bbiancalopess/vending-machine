@@ -23,9 +23,9 @@ VS8_:L7186>lMjV3CMUMCG1
 !s100 MJf]8Mc]2AKdg:j>Ze13V3
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1738888689
+Z7 !s110 1738953997
 !i10b 1
-Z8 !s108 1738888689.000000
+Z8 !s108 1738953997.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd|
 Z10 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd|
 !i113 1
@@ -65,10 +65,10 @@ VPLZO1S<7Fb7Fh[7QMAZ3I1
 !s100 g;X`VKgQJ4dQCbihQKd@X1
 R6
 31
-Z17 !s110 1738888690
+R7
 !i10b 1
-Z18 !s108 1738888690.000000
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd|
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd|
 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd|
 !i113 1
 R11
@@ -85,11 +85,11 @@ Vzz84U;_[[8ejKaSQdTXU`1
 !s100 0YOf0o1TBL2[[KPB]b<F12
 R6
 31
-R17
+R7
 !i10b 1
-R18
-R19
-Z20 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd|
+R8
+R17
+Z18 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd|
 !i113 1
 R11
 R12

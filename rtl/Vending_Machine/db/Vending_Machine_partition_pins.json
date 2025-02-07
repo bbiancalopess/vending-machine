@@ -1,0 +1,229 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "retorna_troco",
+					"strict" : false
+				},
+				{
+					"name" : "libera_produto",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[0]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[1]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[2]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[3]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[4]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[5]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[6]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[8]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[9]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[10]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[11]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[12]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[13]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[14]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[15]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[16]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[17]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[18]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[19]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[20]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[28]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[29]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[30]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[31]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[32]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[33]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[34]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[35]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[36]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[38]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[39]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[40]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[41]",
+					"strict" : false
+				},
+				{
+					"name" : "product_selection[0]",
+					"strict" : false
+				},
+				{
+					"name" : "product_selection[2]",
+					"strict" : false
+				},
+				{
+					"name" : "product_selection[1]",
+					"strict" : false
+				},
+				{
+					"name" : "product_selection[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "coin_inserted_more_coins",
+					"strict" : false
+				},
+				{
+					"name" : "product_chosen_not_more_coins",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[0]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[3]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

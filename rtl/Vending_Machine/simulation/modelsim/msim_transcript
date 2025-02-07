@@ -1,0 +1,572 @@
+# Reading pref.tcl
+# do Vending_Machine_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Subtrator
+# -- Compiling architecture Behavioral of Subtrator
+# End time: 16:17:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Somador/Somador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Somador/Somador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Somador
+# -- Compiling architecture Behavioral of Somador
+# End time: 16:17:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 16:17:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Display_Controller
+# -- Compiling architecture Behavioral of Display_Controller
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux
+# -- Compiling architecture Behavioral of Demux
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Decodificador_Produto/Decodificador_Produto.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Decodificador_Produto/Decodificador_Produto.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decodificador_Produto
+# -- Compiling architecture Behavioral of Decodificador_Produto
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Comparador_Maior_Igual
+# -- Compiling architecture Behavioral of Comparador_Maior_Igual
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Comparador_Maior
+# -- Compiling architecture Behavioral of Comparador_Maior
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_8_To_BCD/Binary_8_To_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_8_To_BCD/Binary_8_To_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Binary_8_to_BCD
+# -- Compiling architecture Behavioral of Binary_8_to_BCD
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Binary_4_to_BCD
+# -- Compiling architecture Behavioral of Binary_4_to_BCD
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity fsm
+# -- Compiling architecture Behavioral of fsm
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Datapath
+# -- Compiling architecture Behavioral of Datapath
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Vending_Machine/Vending_Machine.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Vending_Machine/Vending_Machine.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Vending_Machine
+# -- Compiling architecture Behavioral of Vending_Machine
+# End time: 16:17:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Vending_Machine/Vending_Machine_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:17:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Vending_Machine/Vending_Machine_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Vending_Machine_TB
+# -- Compiling architecture Behavioral of Vending_Machine_TB
+# -- Loading entity Vending_Machine
+# End time: 16:17:45 on Feb 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Vending_Machine_TB
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Vending_Machine_TB 
+# Start time: 16:17:45 on Feb 07,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.vending_machine_tb(behavioral)
+# Loading work.vending_machine(behavioral)
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(behavioral)
+# Loading work.somador(behavioral)
+# Loading work.comparador_maior_igual(behavioral)
+# Loading work.comparador_maior(behavioral)
+# Loading work.decodificador_produto(behavioral)
+# Loading work.registrador(behavioral)
+# Loading work.subtrator(behavioral)
+# Loading work.display_controller(behavioral)
+# Loading work.binary_8_to_bcd(behavioral)
+# Loading work.binary_4_to_bcd(behavioral)
+# Loading work.demux(behavioral)
+# Loading work.fsm(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/subtracao
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/subtracao
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/soma
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /vending_machine_tb/uut/caminhoDados/subtracao
+# ** Error: Erro no Teste 13
+#    Time: 190 ns  Iteration: 0  Instance: /vending_machine_tb
+# ** Note: Teste concluído!
+#    Time: 190 ns  Iteration: 0  Instance: /vending_machine_tb
+do Vending_Machine_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:42 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Subtrator
+# -- Compiling architecture Behavioral of Subtrator
+# End time: 16:20:42 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Somador/Somador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:42 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Somador/Somador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Somador
+# -- Compiling architecture Behavioral of Somador
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Registrador/Registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Registrador/Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador
+# -- Compiling architecture Behavioral of Registrador
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Display_Controller
+# -- Compiling architecture Behavioral of Display_Controller
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux
+# -- Compiling architecture Behavioral of Demux
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Decodificador_Produto/Decodificador_Produto.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Decodificador_Produto/Decodificador_Produto.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decodificador_Produto
+# -- Compiling architecture Behavioral of Decodificador_Produto
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Comparador_Maior_Igual
+# -- Compiling architecture Behavioral of Comparador_Maior_Igual
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Comparador_Maior
+# -- Compiling architecture Behavioral of Comparador_Maior
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_8_To_BCD/Binary_8_To_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_8_To_BCD/Binary_8_To_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Binary_8_to_BCD
+# -- Compiling architecture Behavioral of Binary_8_to_BCD
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Binary_4_to_BCD
+# -- Compiling architecture Behavioral of Binary_4_to_BCD
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/fsm/fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity fsm
+# -- Compiling architecture Behavioral of fsm
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Datapath
+# -- Compiling architecture Behavioral of Datapath
+# End time: 16:20:43 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Vending_Machine/Vending_Machine.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:43 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Vending_Machine/Vending_Machine.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Vending_Machine
+# -- Compiling architecture Behavioral of Vending_Machine
+# End time: 16:20:44 on Feb 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Vending_Machine/Vending_Machine_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:44 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Vending_Machine/Vending_Machine_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Vending_Machine_TB
+# -- Compiling architecture Behavioral of Vending_Machine_TB
+# -- Loading entity Vending_Machine
+# End time: 16:20:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Vending_Machine_TB
+# End time: 16:20:45 on Feb 07,2025, Elapsed time: 0:03:00
+# Errors: 1, Warnings: 34
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Vending_Machine_TB 
+# Start time: 16:20:45 on Feb 07,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.vending_machine_tb(behavioral)
+# Loading work.vending_machine(behavioral)
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(behavioral)
+# Loading work.somador(behavioral)
+# Loading work.comparador_maior_igual(behavioral)
+# Loading work.comparador_maior(behavioral)
+# Loading work.decodificador_produto(behavioral)
+# Loading work.registrador(behavioral)
+# Loading work.subtrator(behavioral)
+# Loading work.display_controller(behavioral)
+# Loading work.binary_8_to_bcd(behavioral)
+# Loading work.binary_4_to_bcd(behavioral)
+# Loading work.demux(behavioral)
+# Loading work.fsm(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/display/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/subtracao
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/subtracao
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vending_machine_tb/uut/caminhoDados/soma
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /vending_machine_tb/uut/caminhoDados/subtracao
+# ** Note: Teste concluído!
+#    Time: 190 ns  Iteration: 0  Instance: /vending_machine_tb
+# End time: 16:25:52 on Feb 07,2025, Elapsed time: 0:05:07
+# Errors: 0, Warnings: 34

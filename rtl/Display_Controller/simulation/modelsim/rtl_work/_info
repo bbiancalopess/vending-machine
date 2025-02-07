@@ -23,9 +23,9 @@ VljGf_P6Cc>ck30WAizgbC1
 !s100 Q`UQBnoUW0fgZLX?iaTiB1
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1738881513
+Z7 !s110 1738954075
 !i10b 1
-Z8 !s108 1738881513.000000
+Z8 !s108 1738954075.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd|
 Z10 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd|
 !i113 1
@@ -157,10 +157,10 @@ VUAi44V[QI_5Z@Am4XN<i32
 !s100 j5W3^0G@I2EIFJXSGD7Lz1
 R6
 31
-R7
+Z29 !s110 1738954076
 !i10b 1
 R8
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller_TB.vhd|
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller_TB.vhd|
 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller_TB.vhd|
 !i113 1
 R11
@@ -179,11 +179,11 @@ V1[<PEUfSd0ERc:[WbYEgh1
 !s100 B5MNb]Y[Ro56lk]83Hn=U1
 R6
 31
-R7
+R29
 !i10b 1
 R8
-R29
-Z30 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller_TB.vhd|
+R30
+Z31 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller_TB.vhd|
 !i113 1
 R11
 R12

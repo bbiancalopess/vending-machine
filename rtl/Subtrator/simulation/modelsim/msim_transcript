@@ -10,10 +10,10 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator.vhd}
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:50:58 on Feb 04,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator.vhd 
+# Start time: 15:51:51 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -21,13 +21,13 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity Subtrator
 # -- Compiling architecture Behavioral of Subtrator
-# End time: 17:50:58 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:51:52 on Feb 07,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator_TB.vhd}
+# vcom -93 -work work {C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator_TB.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:50:58 on Feb 04,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/Subtrator/Subtrator_TB.vhd 
+# Start time: 15:51:52 on Feb 07,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -36,12 +36,12 @@
 # -- Compiling entity Subtrator_TB
 # -- Compiling architecture Behavioral of Subtrator_TB
 # -- Loading entity Subtrator
-# End time: 17:50:58 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:51:52 on Feb 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Subtrator_TB
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Subtrator_TB 
-# Start time: 17:50:58 on Feb 04,2025
+# Start time: 15:51:52 on Feb 07,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -60,5 +60,5 @@
 #    Time: 0 ps  Iteration: 0  Instance: /subtrator_tb/UUT
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /subtrator_tb/UUT
-# End time: 17:52:19 on Feb 04,2025, Elapsed time: 0:01:21
+# End time: 15:54:18 on Feb 07,2025, Elapsed time: 0:02:26
 # Errors: 0, Warnings: 2

@@ -4,6 +4,34 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "select_demux",
+					"strict" : false
+				},
+				{
+					"name" : "load_saldo",
+					"strict" : false
+				},
+				{
+					"name" : "clear_saldo",
+					"strict" : false
+				},
+				{
+					"name" : "load_troco_reg",
+					"strict" : false
+				},
+				{
+					"name" : "clear_troco_reg",
+					"strict" : false
+				},
+				{
+					"name" : "retorna_troco",
+					"strict" : false
+				},
+				{
+					"name" : "libera_produto",
+					"strict" : false
+				},
+				{
 					"name" : "estado_fsm[0]",
 					"strict" : false
 				},
@@ -16,7 +44,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "saldo_insuficiente",
+					"name" : "dont_insert_more_coins",
+					"strict" : false
+				},
+				{
+					"name" : "insert_more_coins",
+					"strict" : false
+				},
+				{
+					"name" : "compare_maior_igual",
 					"strict" : false
 				},
 				{
@@ -24,15 +60,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
 					"name" : "coin_inserted",
 					"strict" : false
 				},
 				{
-					"name" : "tem_troco",
+					"name" : "product_chosen",
+					"strict" : false
+				},
+				{
+					"name" : "compare_maior",
 					"strict" : false
 				}
 			]

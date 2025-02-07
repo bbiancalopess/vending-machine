@@ -23,9 +23,9 @@ VljGf_P6Cc>ck30WAizgbC1
 !s100 Q`UQBnoUW0fgZLX?iaTiB1
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1738869605
+Z7 !s110 1738953536
 !i10b 1
-Z8 !s108 1738869605.000000
+Z8 !s108 1738953535.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd|
 Z10 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd|
 !i113 1
@@ -68,8 +68,8 @@ R6
 31
 R7
 !i10b 1
-R8
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
+Z18 !s108 1738953536.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
 !i113 1
 R11
@@ -89,9 +89,9 @@ R6
 31
 R7
 !i10b 1
-R8
 R18
-Z19 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
+R19
+Z20 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
 !i113 1
 R11
 R12

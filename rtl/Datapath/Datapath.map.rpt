@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Datapath
-Thu Feb 06 22:44:23 2025
+Fri Feb 07 14:33:46 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Feb 06 22:44:23 2025       ;
+; Analysis & Synthesis Status     ; Successful - Fri Feb 07 14:33:46 2025       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Datapath                                    ;
 ; Top-level Entity Name           ; Datapath                                    ;
@@ -307,7 +307,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -317,7 +317,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Feb 06 22:44:13 2025
+    Info: Processing started: Fri Feb 07 14:33:34 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Datapath -c Datapath
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -396,8 +396,8 @@ Info (21057): Implemented 195 device resources after synthesis - the final resou
     Info (21061): Implemented 120 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
     Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Thu Feb 06 22:44:23 2025
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Processing ended: Fri Feb 07 14:33:46 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:23
 
 

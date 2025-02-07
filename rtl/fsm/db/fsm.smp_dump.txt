@@ -1,0 +1,11 @@
+
+State Machine - |fsm|estado_atual
+Name estado_atual.ESPERA_STATE estado_atual.RETORNA_TROCO_STATE estado_atual.CALCULA_TROCO_STATE estado_atual.ERRO_VALOR_STATE estado_atual.LIBERA_PRODUTO_STATE estado_atual.VERIFICA_CREDITO_STATE estado_atual.REGISTRA_MOEDA_STATE estado_atual.FINALIZA_STATE 
+estado_atual.FINALIZA_STATE 0 0 0 0 0 0 0 0 
+estado_atual.REGISTRA_MOEDA_STATE 0 0 0 0 0 0 1 1 
+estado_atual.VERIFICA_CREDITO_STATE 0 0 0 0 0 1 0 1 
+estado_atual.LIBERA_PRODUTO_STATE 0 0 0 0 1 0 0 1 
+estado_atual.ERRO_VALOR_STATE 0 0 0 1 0 0 0 1 
+estado_atual.CALCULA_TROCO_STATE 0 0 1 0 0 0 0 1 
+estado_atual.RETORNA_TROCO_STATE 0 1 0 0 0 0 0 1 
+estado_atual.ESPERA_STATE 1 0 0 0 0 0 0 1 
