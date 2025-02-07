@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/simulation/modelsim
+Ebinary_4_to_bcd
+Z1 w1738869602
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd
+Z5 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd
+l0
+L4 1
+VljGf_P6Cc>ck30WAizgbC1
+!s100 Q`UQBnoUW0fgZLX?iaTiB1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1738869605
+!i10b 1
+Z8 !s108 1738869605.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd|
+Z10 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 15 binary_4_to_bcd 0 22 ljGf_P6Cc>ck30WAizgbC1
+!i122 0
+l12
+L11 25
+VkidMSdVK>]H2;Ad5CYCgd1
+!s100 NmLi9M`Ifk^bnA`I1Q>`m2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebinary_4_to_bcd_tb
+Z13 w1738862622
+Z14 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 1
+R0
+Z16 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd
+Z17 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd
+l0
+L5 1
+VI6Xm@j[9`JoUGilCgeBKE3
+!s100 Q[We8l@lQf3aFL^n5_7Qh0
+R6
+31
+R7
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
+!s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R15
+R2
+R3
+DEx4 work 18 binary_4_to_bcd_tb 0 22 I6Xm@j[9`JoUGilCgeBKE3
+!i122 1
+l21
+L8 64
+Vii_a8R:Vb=UhegHdf<H`D2
+!s100 Em2FXz>1`>1CTk3a97_970
+R6
+31
+R7
+!i10b 1
+R8
+R18
+Z19 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD_TB.vhd|
+!i113 1
+R11
+R12

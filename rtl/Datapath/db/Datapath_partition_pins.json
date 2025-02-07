@@ -4,6 +4,62 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "coin_inserted",
+					"strict" : false
+				},
+				{
+					"name" : "insert_more_coins",
+					"strict" : false
+				},
+				{
+					"name" : "product_chosen",
+					"strict" : false
+				},
+				{
+					"name" : "dont_insert_more_coins",
+					"strict" : false
+				},
+				{
+					"name" : "compare_maior_igual",
+					"strict" : false
+				},
+				{
+					"name" : "compare_maior",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[0]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[1]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[2]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[3]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[4]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[5]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[6]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_total[7]",
+					"strict" : false
+				},
+				{
 					"name" : "valor_displays[0]",
 					"strict" : false
 				},
@@ -44,6 +100,30 @@
 					"strict" : false
 				},
 				{
+					"name" : "valor_displays[10]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[11]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[12]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[13]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[14]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_displays[15]",
+					"strict" : false
+				},
+				{
 					"name" : "valor_displays[16]",
 					"strict" : false
 				},
@@ -64,71 +144,67 @@
 					"strict" : false
 				},
 				{
-					"name" : "valor_displays[21]",
+					"name" : "valor_displays[28]",
 					"strict" : false
 				},
 				{
-					"name" : "valor_displays[22]",
+					"name" : "valor_displays[29]",
 					"strict" : false
 				},
 				{
-					"name" : "valor_displays[23]",
+					"name" : "valor_displays[30]",
 					"strict" : false
 				},
 				{
-					"name" : "display_segments[0]",
+					"name" : "valor_displays[31]",
 					"strict" : false
 				},
 				{
-					"name" : "display_segments[1]",
+					"name" : "valor_displays[32]",
 					"strict" : false
 				},
 				{
-					"name" : "display_segments[2]",
+					"name" : "valor_displays[33]",
 					"strict" : false
 				},
 				{
-					"name" : "display_segments[3]",
+					"name" : "valor_displays[34]",
 					"strict" : false
 				},
 				{
-					"name" : "display_segments[4]",
+					"name" : "valor_displays[35]",
 					"strict" : false
 				},
 				{
-					"name" : "display_segments[5]",
+					"name" : "valor_displays[36]",
 					"strict" : false
 				},
 				{
-					"name" : "display_segments[6]",
+					"name" : "valor_displays[38]",
 					"strict" : false
 				},
 				{
-					"name" : "display_anodes[0]",
+					"name" : "valor_displays[39]",
 					"strict" : false
 				},
 				{
-					"name" : "display_anodes[1]",
+					"name" : "valor_displays[40]",
 					"strict" : false
 				},
 				{
-					"name" : "display_anodes[2]",
+					"name" : "valor_displays[41]",
 					"strict" : false
 				},
 				{
-					"name" : "display_anodes[3]",
+					"name" : "coin_inserted_more_coins",
 					"strict" : false
 				},
 				{
-					"name" : "display_anodes[4]",
+					"name" : "select_demux",
 					"strict" : false
 				},
 				{
-					"name" : "display_anodes[5]",
-					"strict" : false
-				},
-				{
-					"name" : "tem_troco",
+					"name" : "product_chosen_not_more_coins",
 					"strict" : false
 				},
 				{
@@ -148,10 +224,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "estado_fsm[2]",
-					"strict" : false
-				},
-				{
 					"name" : "estado_fsm[0]",
 					"strict" : false
 				},
@@ -160,31 +232,31 @@
 					"strict" : false
 				},
 				{
+					"name" : "estado_fsm[2]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "clear_acumulador",
+					"name" : "clear_saldo",
 					"strict" : false
 				},
 				{
-					"name" : "load_acumulador",
+					"name" : "load_saldo",
 					"strict" : false
 				},
 				{
-					"name" : "clear_troco",
+					"name" : "clear_troco_reg",
 					"strict" : false
 				},
 				{
-					"name" : "load_troco",
+					"name" : "load_troco_reg",
 					"strict" : false
 				},
 				{
-					"name" : "coin_value[0]",
-					"strict" : false
-				},
-				{
-					"name" : "coin_value[1]",
+					"name" : "coin_value[3]",
 					"strict" : false
 				},
 				{
@@ -192,7 +264,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "coin_value[3]",
+					"name" : "coin_value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "coin_value[0]",
 					"strict" : false
 				}
 			]

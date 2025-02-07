@@ -1,0 +1,237 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "display_segments[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[7]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[8]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[9]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[10]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[11]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[12]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[13]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[14]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[15]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[16]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[17]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[18]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[19]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[20]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[28]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[29]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[30]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[31]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[32]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[33]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[34]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[35]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[36]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[38]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[39]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[40]",
+					"strict" : false
+				},
+				{
+					"name" : "display_segments[41]",
+					"strict" : false
+				},
+				{
+					"name" : "estado_fsm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estado_fsm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "produto_escolhido[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estado_fsm[2]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_armazenado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[1]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[7]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[6]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[5]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[4]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[3]",
+					"strict" : false
+				},
+				{
+					"name" : "total_inserido[2]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_armazenado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_armazenado[7]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_armazenado[6]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_armazenado[5]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_armazenado[4]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_armazenado[3]",
+					"strict" : false
+				},
+				{
+					"name" : "troco_armazenado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "produto_escolhido[2]",
+					"strict" : false
+				},
+				{
+					"name" : "produto_escolhido[1]",
+					"strict" : false
+				},
+				{
+					"name" : "produto_escolhido[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

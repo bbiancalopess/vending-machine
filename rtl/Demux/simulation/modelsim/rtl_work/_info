@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/simulation/modelsim
+Edemux
+Z1 w1738888038
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd
+Z5 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd
+l0
+L4 1
+VS8_:L7186>lMjV3CMUMCG1
+!s100 MJf]8Mc]2AKdg:j>Ze13V3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1738888689
+!i10b 1
+Z8 !s108 1738888689.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd|
+Z10 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 5 demux 0 22 S8_:L7186>lMjV3CMUMCG1
+!i122 0
+l14
+L13 17
+VZSF7M0H63a]aF:LQUUjSV1
+!s100 YE9n_9G3lB5SVW8;kH2]S1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edemux_tb
+Z13 w1738888595
+Z14 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R2
+R3
+!i122 1
+R0
+Z15 8C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd
+Z16 FC:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd
+l0
+L6 1
+VPLZO1S<7Fb7Fh[7QMAZ3I1
+!s100 g;X`VKgQJ4dQCbihQKd@X1
+R6
+31
+Z17 !s110 1738888690
+!i10b 1
+Z18 !s108 1738888690.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd|
+!s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd|
+!i113 1
+R11
+R12
+Atestbench
+R14
+R2
+R3
+DEx4 work 8 demux_tb 0 22 PLZO1S<7Fb7Fh[7QMAZ3I1
+!i122 1
+l25
+L9 61
+Vzz84U;_[[8ejKaSQdTXU`1
+!s100 0YOf0o1TBL2[[KPB]b<F12
+R6
+31
+R17
+!i10b 1
+R18
+R19
+Z20 !s107 C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux_TB.vhd|
+!i113 1
+R11
+R12

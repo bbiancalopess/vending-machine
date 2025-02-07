@@ -1,34 +1,40 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+--use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity Datapath is
 	port (
-		clk						: in STD_LOGIC;
-		coin_value				: in STD_LOGIC_VECTOR(3 downto 0);
-		product_selection		: in STD_LOGIC_VECTOR(3 downto 0);
-		load_acumulador		: in STD_LOGIC;
-		clear_acumulador		: in STD_LOGIC;
-		load_troco				: in STD_LOGIC;
-		clear_troco				: in STD_LOGIC;
-		estado_fsm				: in STD_LOGIC_VECTOR(2 downto 0);
-		valor_displays			: out STD_LOGIC_VECTOR(23 downto 0);
-		display_segments 		: out STD_LOGIC_VECTOR(6 downto 0);
-		display_anodes			: out STD_LOGIC_VECTOR(5 downto 0);
-		tem_troco				: out STD_LOGIC
+		clk												: in STD_LOGIC;
+		coin_inserted_more_coins					: in STD_LOGIC;
+		product_chosen_not_more_coins				: in STD_LOGIC;
+		select_demux									: in STD_LOGIC;
+		load_saldo										: in STD_LOGIC;
+		clear_saldo										: in STD_LOGIC;
+		load_troco_reg									: in STD_LOGIC;
+		clear_troco_reg								: in STD_LOGIC;
+		coin_value										: in STD_LOGIC_VECTOR(3 downto 0);
+		product_selection								: in STD_LOGIC_VECTOR(3 downto 0);
+		estado_fsm										: in STD_LOGIC_VECTOR(2 downto 0);
+		coin_inserted									: out STD_LOGIC;
+		insert_more_coins								: out STD_LOGIC;
+		product_chosen									: out STD_LOGIC;
+		dont_insert_more_coins						: out STD_LOGIC;
+		compare_maior_igual							: out STD_LOGIC;
+		compare_maior									: out STD_LOGIC;		
+		troco_total										: out STD_LOGIC_VECTOR(7 downto 0);
+		valor_displays									: out STD_LOGIC_VECTOR(41 downto 0)
 	);
 end Datapath;
 
 architecture Behavioral of Datapath is
-	signal saldo_atual 			: STD_LOGIC_VECTOR(7 downto 0);
-	signal novo_saldo 			: STD_LOGIC_VECTOR(7 downto 0);
-	signal preco_produto 		: STD_LOGIC_VECTOR(7 downto 0);
-	signal troco 					: STD_LOGIC_VECTOR(7 downto 0);
-	signal troco_armazenado 	: STD_LOGIC_VECTOR(7 downto 0);
-	signal sinal_maior_igual 	: STD_LOGIC;
-	signal sinal_maior 			: STD_LOGIC;
-	signal saldo_resetado 		: STD_LOGIC_VECTOR(7 downto 0);
-	signal valor_displays_mux 	: STD_LOGIC_VECTOR(23 downto 0);
+	signal saldo_atual 							: STD_LOGIC_VECTOR(7 downto 0);
+	signal novo_saldo 							: STD_LOGIC_VECTOR(7 downto 0);
+	signal preco_produto_sinal					: STD_LOGIC_VECTOR(7 downto 0);
+	signal troco_sinal							: STD_LOGIC_VECTOR(7 downto 0);
+	signal troco_armazenado 					: STD_LOGIC_VECTOR(7 downto 0);
+	signal compare_maior_igual_sinal 		: STD_LOGIC;
+	signal compare_maior_sinal 				: STD_LOGIC;
 	
 	-- Componentes
 	component Somador 
@@ -80,90 +86,99 @@ architecture Behavioral of Datapath is
       );
    end component;
 
-   component Mux_Displays
-      port (
-         clk 					: in STD_LOGIC;
-         valor 				: in STD_LOGIC_VECTOR(23 downto 0);
-         display_segments 	: out STD_LOGIC_VECTOR(6 downto 0);
-         display_anodes 	: out STD_LOGIC_VECTOR(5 downto 0)
-      );
-   end component;
-	
-	component Mux_Msg_Selector
+	component Display_Controller
 		port (
-			estado_fsm       : in STD_LOGIC_VECTOR(2 downto 0);
-			total_inserido   : in STD_LOGIC_VECTOR(7 downto 0);
-			troco_armazenado : in STD_LOGIC_VECTOR(7 downto 0);
-			produto_escolhido: in STD_LOGIC_VECTOR(3 downto 0);
-			preco_produto    : in STD_LOGIC_VECTOR(7 downto 0);
-			valor_displays   : out STD_LOGIC_VECTOR(23 downto 0)
+			estado_fsm 				: in STD_LOGIC_VECTOR(2 downto 0);
+			total_inserido			: in STD_LOGIC_VECTOR(7 downto 0);
+			troco_armazenado		: in STD_LOGIC_VECTOR(7 downto 0);
+			produto_escolhido		: in STD_LOGIC_VECTOR(3 downto 0);
+			preco_produto			: in STD_LOGIC_VECTOR(7 downto 0);
+			display_segments		: out STD_LOGIC_VECTOR(41 downto 0)
+		);
+	end component;
+	
+	component Demux
+		port (
+			dados			: in STD_LOGIC;
+			sel			: in STD_LOGIC;
+			saida0		: out STD_LOGIC;
+			saida1		: out STD_LOGIC
 		);
 	end component;
 	
 begin
 	-- Instanciação dos componentes
-	U1: Somador port map (
+	soma: Somador port map (
 		total_inserido => saldo_atual,
 		coin_value 		=> coin_value,
       resultado 		=> novo_saldo
 	);
 	
-	U2: Comparador_Maior_Igual port map (
+	comp_maior_igual: Comparador_Maior_Igual port map (
       total_inserido 	=> saldo_atual,
-      preco_produto 		=> preco_produto,
-      sinal_maior_igual => sinal_maior_igual
+      preco_produto 		=> preco_produto_sinal,
+      sinal_maior_igual => compare_maior_igual_sinal
    );
 	
-	U3: Comparador_Maior port map (
+	comp_maior: Comparador_Maior port map (
       total_inserido => saldo_atual,
-      preco_produto 	=> preco_produto,
-      sinal_maior 	=> sinal_maior
+      preco_produto 	=> preco_produto_sinal,
+      sinal_maior 	=> compare_maior_sinal
    );
 	
-	U4: Decodificador_Produto port map (
+	decod_preco_prod: Decodificador_Produto port map (
       product_selection => product_selection,
-      preco_produto 		=> preco_produto
+      preco_produto 		=> preco_produto_sinal
    );
 	
-   U5: Registrador port map (
+   reg_total_inserido: Registrador port map (
       clk 					=> clk,
-      reset 				=> clear_acumulador,
-      load 					=> load_acumulador,
+      reset 				=> clear_saldo,
+      load 					=> load_saldo,
       dado 					=> novo_saldo,
       valor_armazenado 	=> saldo_atual
    );
 
-   U6: Subtrator port map (
+   subtracao: Subtrator port map (
       total_inserido => saldo_atual,
-      preco_produto 	=> preco_produto,
-      troco 			=> troco
+      preco_produto 	=> preco_produto_sinal,
+      troco 			=> troco_sinal
    );
 
-   U7: Mux_Displays port map (
-      clk 					=> clk,
-      valor 				=> valor_displays_mux,
-      display_segments 	=> display_segments,
-      display_anodes 	=> display_anodes
-   );
-	
-	U8: Registrador port map (
+	reg_troco: Registrador port map (
 		clk 					=> clk,
-		reset					=> clear_troco,
-		load 					=> load_troco,
-		dado 					=> troco,
+		reset					=> clear_troco_reg,
+		load 					=> load_troco_reg,
+		dado 					=> troco_sinal,
 		valor_armazenado 	=> troco_armazenado
 	);
 	
-	U9: Mux_Msg_Selector port map (
-		estado_fsm 			=> estado_fsm,
-		total_inserido 	=> saldo_atual,
-		troco_armazenado 	=> troco_armazenado,
-		produto_escolhido => product_selection,
-		preco_produto 		=> preco_produto,
-		valor_displays 	=> valor_displays_mux
+	display: Display_Controller port map (
+		estado_fsm				=> estado_fsm,
+		total_inserido			=> saldo_atual,
+		troco_armazenado		=> troco_armazenado,
+		produto_escolhido		=> product_selection,
+		preco_produto			=> preco_produto_sinal,
+		display_segments		=> valor_displays
+	);
+		
+	demux_coin_and_more_coins: Demux port map(
+		dados			=> coin_inserted_more_coins,
+		sel			=> select_demux,
+		saida0		=> coin_inserted,
+		saida1		=> insert_more_coins
 	);
 	
-	valor_displays <= valor_displays_mux;
+	demux_product_and_not_more_coins: Demux port map(
+		dados			=> product_chosen_not_more_coins,
+		sel			=> select_demux,
+		saida0		=> product_chosen,
+		saida1		=> dont_insert_more_coins
+	);
 	
-	tem_troco <= sinal_maior;
+	-- Atribuições às saídas
+	troco_total <= troco_armazenado;
+	compare_maior_igual <= compare_maior_igual_sinal;
+	compare_maior <= compare_maior_sinal;
+	
 end Behavioral;

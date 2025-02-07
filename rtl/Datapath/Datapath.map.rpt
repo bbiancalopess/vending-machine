@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Datapath
-Wed Feb 05 16:26:27 2025
+Thu Feb 06 22:44:23 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -15,7 +15,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "Comparador_Maior_Igual:U2"
+ 10. Port Connectivity Checks: "Display_Controller:display|Binary_8_to_BCD:U2"
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
  13. Analysis & Synthesis Messages
@@ -45,14 +45,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Feb 05 16:26:27 2025       ;
+; Analysis & Synthesis Status     ; Successful - Thu Feb 06 22:44:23 2025       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Datapath                                    ;
 ; Top-level Entity Name           ; Datapath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 19                                          ;
-; Total pins                      ; 54                                          ;
+; Total registers                 ; 16                                          ;
+; Total pins                      ; 75                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -174,12 +174,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                     ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                       ; Library ;
 +------------------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------+---------+
-; ../Binary_To_BCD/Binary_To_BCD.vhd                   ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_To_BCD/Binary_To_BCD.vhd                   ;         ;
-; ../Mux_Msg_Selector/Mux_Msg_Selector.vhd             ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Mux_Msg_Selector/Mux_Msg_Selector.vhd             ;         ;
+; ../Demux/Demux.vhd                                   ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd                                   ;         ;
+; ../Binary_8_To_BCD/Binary_8_To_BCD.vhd               ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_8_To_BCD/Binary_8_To_BCD.vhd               ;         ;
+; ../Binary_4_To_BCD/Binary_4_to_BCD.vhd               ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd               ;         ;
+; ../Display_Controller/Display_Controller.vhd         ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd         ;         ;
 ; ../Subtrator/Subtrator.vhd                           ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd                           ;         ;
 ; ../Somador/Somador.vhd                               ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Somador/Somador.vhd                               ;         ;
 ; ../Registrador/Registrador.vhd                       ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Registrador/Registrador.vhd                       ;         ;
-; ../Mux_Displays/Mux_Displays.vhd                     ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Mux_Displays/Mux_Displays.vhd                     ;         ;
 ; ../Decodificador_Produto/Decodificador_Produto.vhd   ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Decodificador_Produto/Decodificador_Produto.vhd   ;         ;
 ; ../Comparador_Maior_Igual/Comparador_Maior_Igual.vhd ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior_Igual/Comparador_Maior_Igual.vhd ;         ;
 ; ../Comparador_Maior/Comparador_Maior.vhd             ; yes             ; User VHDL File  ; C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd             ;         ;
@@ -192,46 +193,47 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 88                  ;
+; Estimate of Logic utilization (ALMs needed) ; 75                  ;
 ;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 141                 ;
+; Combinational ALUT usage for logic          ; 120                 ;
 ;     -- 7 input functions                    ; 2                   ;
-;     -- 6 input functions                    ; 33                  ;
-;     -- 5 input functions                    ; 24                  ;
-;     -- 4 input functions                    ; 37                  ;
-;     -- <=3 input functions                  ; 45                  ;
+;     -- 6 input functions                    ; 28                  ;
+;     -- 5 input functions                    ; 19                  ;
+;     -- 4 input functions                    ; 30                  ;
+;     -- <=3 input functions                  ; 41                  ;
 ;                                             ;                     ;
-; Dedicated logic registers                   ; 19                  ;
+; Dedicated logic registers                   ; 16                  ;
 ;                                             ;                     ;
-; I/O pins                                    ; 54                  ;
+; I/O pins                                    ; 75                  ;
 ;                                             ;                     ;
 ; Total DSP Blocks                            ; 0                   ;
 ;                                             ;                     ;
-; Maximum fan-out node                        ; estado_fsm[2]~input ;
-; Maximum fan-out                             ; 33                  ;
-; Total fan-out                               ; 753                 ;
-; Average fan-out                             ; 2.81                ;
+; Maximum fan-out node                        ; estado_fsm[1]~input ;
+; Maximum fan-out                             ; 32                  ;
+; Total fan-out                               ; 693                 ;
+; Average fan-out                             ; 2.42                ;
 +---------------------------------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Entity Name           ; Library Name ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+-----------------------+--------------+
-; |Datapath                     ; 141 (0)             ; 19 (0)                    ; 0                 ; 0          ; 54   ; 0            ; |Datapath                                      ; Datapath              ; work         ;
-;    |Comparador_Maior:U3|      ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Comparador_Maior:U3                  ; Comparador_Maior      ; work         ;
-;    |Decodificador_Produto:U4| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Decodificador_Produto:U4             ; Decodificador_Produto ; work         ;
-;    |Mux_Displays:U7|          ; 28 (28)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Mux_Displays:U7                      ; Mux_Displays          ; work         ;
-;    |Mux_Msg_Selector:U9|      ; 84 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Mux_Msg_Selector:U9                  ; Mux_Msg_Selector      ; work         ;
-;       |Binary_to_BCD:U1|      ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Mux_Msg_Selector:U9|Binary_to_BCD:U1 ; Binary_to_BCD         ; work         ;
-;       |Binary_to_BCD:U2|      ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Mux_Msg_Selector:U9|Binary_to_BCD:U2 ; Binary_to_BCD         ; work         ;
-;       |Binary_to_BCD:U3|      ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Mux_Msg_Selector:U9|Binary_to_BCD:U3 ; Binary_to_BCD         ; work         ;
-;    |Registrador:U5|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Registrador:U5                       ; Registrador           ; work         ;
-;    |Registrador:U8|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Registrador:U8                       ; Registrador           ; work         ;
-;    |Somador:U1|               ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Somador:U1                           ; Somador               ; work         ;
-;    |Subtrator:U6|             ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Subtrator:U6                         ; Subtrator             ; work         ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+-----------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name            ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+------------------------+--------------+
+; |Datapath                                    ; 120 (0)             ; 16 (0)                    ; 0                 ; 0          ; 75   ; 0            ; |Datapath                                               ; Datapath               ; work         ;
+;    |Comparador_Maior:comp_maior|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Comparador_Maior:comp_maior                   ; Comparador_Maior       ; work         ;
+;    |Comparador_Maior_Igual:comp_maior_igual| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Comparador_Maior_Igual:comp_maior_igual       ; Comparador_Maior_Igual ; work         ;
+;    |Decodificador_Produto:decod_preco_prod|  ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Decodificador_Produto:decod_preco_prod        ; Decodificador_Produto  ; work         ;
+;    |Demux:demux_coin_and_more_coins|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Demux:demux_coin_and_more_coins               ; Demux                  ; work         ;
+;    |Demux:demux_product_and_not_more_coins|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Demux:demux_product_and_not_more_coins        ; Demux                  ; work         ;
+;    |Display_Controller:display|              ; 83 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Display_Controller:display                    ; Display_Controller     ; work         ;
+;       |Binary_8_to_BCD:U1|                   ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Display_Controller:display|Binary_8_to_BCD:U1 ; Binary_8_to_BCD        ; work         ;
+;       |Binary_8_to_BCD:U3|                   ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Display_Controller:display|Binary_8_to_BCD:U3 ; Binary_8_to_BCD        ; work         ;
+;    |Registrador:reg_total_inserido|          ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Registrador:reg_total_inserido                ; Registrador            ; work         ;
+;    |Registrador:reg_troco|                   ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Registrador:reg_troco                         ; Registrador            ; work         ;
+;    |Somador:soma|                            ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Somador:soma                                  ; Somador                ; work         ;
+;    |Subtrator:subtracao|                     ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Datapath|Subtrator:subtracao                           ; Subtrator              ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -240,7 +242,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 19    ;
+; Total registers                              ; 16    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 16    ;
@@ -250,26 +252,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Datapath|Mux_Msg_Selector:U9|Binary_to_BCD:U3|Add5 ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |Datapath|Mux_Displays:U7|Mux1                      ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Datapath|Mux_Displays:U7|Mux3                      ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |Datapath|Mux_Msg_Selector:U9|Mux16                 ;
-; 10:1               ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |Datapath|Mux_Msg_Selector:U9|Mux10                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |Datapath|Display_Controller:display|Binary_8_to_BCD:U3|Add6 ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |Datapath|Display_Controller:display|Mux9                    ;
+; 16:1               ; 3 bits    ; 30 LEs        ; 27 LEs               ; 3 LEs                  ; No         ; |Datapath|Display_Controller:display|Mux13                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Comparador_Maior_Igual:U2"                                                                       ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port              ; Type   ; Severity ; Details                                                                             ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
-; sinal_maior_igual ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Display_Controller:display|Binary_8_to_BCD:U2"                                         ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; bcd_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -277,29 +277,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 19                          ;
+; arriav_ff             ; 16                          ;
 ;     ENA CLR           ; 16                          ;
-;     plain             ; 3                           ;
-; arriav_lcell_comb     ; 147                         ;
+; arriav_lcell_comb     ; 126                         ;
 ;     arith             ; 8                           ;
 ;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 4                           ;
 ;     extend            ; 2                           ;
 ;         7 data inputs ; 2                           ;
-;     normal            ; 129                         ;
+;     normal            ; 108                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 18                          ;
-;         4 data inputs ; 37                          ;
-;         5 data inputs ; 24                          ;
-;         6 data inputs ; 33                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 30                          ;
+;         5 data inputs ; 19                          ;
+;         6 data inputs ; 28                          ;
 ;     shared            ; 8                           ;
 ;         2 data inputs ; 8                           ;
-; boundary_port         ; 54                          ;
+; boundary_port         ; 75                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.72                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.70                        ;
 +-----------------------+-----------------------------+
 
 
@@ -318,16 +317,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Feb 05 16:26:16 2025
+    Info: Processing started: Thu Feb 06 22:44:13 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Datapath -c Datapath
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/binary_to_bcd/binary_to_bcd.vhd
-    Info (12022): Found design unit 1: Binary_to_BCD-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_To_BCD/Binary_To_BCD.vhd Line: 12
-    Info (12023): Found entity 1: Binary_to_BCD File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_To_BCD/Binary_To_BCD.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/mux_msg_selector/mux_msg_selector.vhd
-    Info (12022): Found design unit 1: Mux_Msg_Selector-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Mux_Msg_Selector/Mux_Msg_Selector.vhd Line: 16
-    Info (12023): Found entity 1: Mux_Msg_Selector File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Mux_Msg_Selector/Mux_Msg_Selector.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/demux/demux.vhd
+    Info (12022): Found design unit 1: Demux-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd Line: 13
+    Info (12023): Found entity 1: Demux File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Demux/Demux.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/binary_8_to_bcd/binary_8_to_bcd.vhd
+    Info (12022): Found design unit 1: Binary_8_to_BCD-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_8_To_BCD/Binary_8_To_BCD.vhd Line: 12
+    Info (12023): Found entity 1: Binary_8_to_BCD File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_8_To_BCD/Binary_8_To_BCD.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/binary_4_to_bcd/binary_4_to_bcd.vhd
+    Info (12022): Found design unit 1: Binary_4_to_BCD-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd Line: 11
+    Info (12023): Found entity 1: Binary_4_to_BCD File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Binary_4_To_BCD/Binary_4_to_BCD.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/display_controller/display_controller.vhd
+    Info (12022): Found design unit 1: Display_Controller-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd Line: 16
+    Info (12023): Found entity 1: Display_Controller File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/subtrator/subtrator.vhd
     Info (12022): Found design unit 1: Subtrator-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd Line: 13
     Info (12023): Found entity 1: Subtrator File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Subtrator/Subtrator.vhd Line: 5
@@ -337,9 +342,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/registrador/registrador.vhd
     Info (12022): Found design unit 1: Registrador-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Registrador/Registrador.vhd Line: 14
     Info (12023): Found entity 1: Registrador File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Registrador/Registrador.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/mux_displays/mux_displays.vhd
-    Info (12022): Found design unit 1: Mux_Displays-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Mux_Displays/Mux_Displays.vhd Line: 14
-    Info (12023): Found entity 1: Mux_Displays File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Mux_Displays/Mux_Displays.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /users/bianca/documents/ufmg/3-periodo/lsd/vending-machine/rtl/decodificador_produto/decodificador_produto.vhd
     Info (12022): Found design unit 1: Decodificador_Produto-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Decodificador_Produto/Decodificador_Produto.vhd Line: 11
     Info (12023): Found entity 1: Decodificador_Produto File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Decodificador_Produto/Decodificador_Produto.vhd Line: 4
@@ -350,8 +352,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
     Info (12022): Found design unit 1: Comparador_Maior-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd Line: 12
     Info (12023): Found entity 1: Comparador_Maior File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Comparador_Maior/Comparador_Maior.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: Datapath-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 22
-    Info (12023): Found entity 1: Datapath File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 5
+    Info (12022): Found design unit 1: Datapath-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 30
+    Info (12023): Found entity 1: Datapath File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file datapath_tb.vhd
     Info (12022): Found design unit 1: Datapath_TB-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath_TB.vhd Line: 8
     Info (12023): Found entity 1: Datapath_TB File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath_TB.vhd Line: 5
@@ -364,38 +366,38 @@ Info (12021): Found 2 design units, including 1 entities, in source file decodif
 Info (12021): Found 2 design units, including 1 entities, in source file subtrator_registrador_tb.vhd
     Info (12022): Found design unit 1: Subtrator_Registrador_TB-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Subtrator_Registrador_TB.vhd Line: 8
     Info (12023): Found entity 1: Subtrator_Registrador_TB File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Subtrator_Registrador_TB.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file mux_selector_displays_tb.vhd
-    Info (12022): Found design unit 1: Mux_Selector_Displays_TB-Behavioral File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Mux_Selector_Displays_TB.vhd Line: 8
-    Info (12023): Found entity 1: Mux_Selector_Displays_TB File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Mux_Selector_Displays_TB.vhd Line: 5
 Info (12127): Elaborating entity "Datapath" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(28): object "sinal_maior_igual" assigned a value but never read File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 28
-Info (12128): Elaborating entity "Somador" for hierarchy "Somador:U1" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 105
-Info (12128): Elaborating entity "Comparador_Maior_Igual" for hierarchy "Comparador_Maior_Igual:U2" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 111
-Info (12128): Elaborating entity "Comparador_Maior" for hierarchy "Comparador_Maior:U3" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 117
-Info (12128): Elaborating entity "Decodificador_Produto" for hierarchy "Decodificador_Produto:U4" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 123
-Info (12128): Elaborating entity "Registrador" for hierarchy "Registrador:U5" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 128
-Info (12128): Elaborating entity "Subtrator" for hierarchy "Subtrator:U6" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 136
-Info (12128): Elaborating entity "Mux_Displays" for hierarchy "Mux_Displays:U7" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 142
-Info (12128): Elaborating entity "Mux_Msg_Selector" for hierarchy "Mux_Msg_Selector:U9" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 157
-Info (12128): Elaborating entity "Binary_to_BCD" for hierarchy "Mux_Msg_Selector:U9|Binary_to_BCD:U1" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Mux_Msg_Selector/Mux_Msg_Selector.vhd Line: 40
+Info (12128): Elaborating entity "Somador" for hierarchy "Somador:soma" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 111
+Info (12128): Elaborating entity "Comparador_Maior_Igual" for hierarchy "Comparador_Maior_Igual:comp_maior_igual" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 117
+Info (12128): Elaborating entity "Comparador_Maior" for hierarchy "Comparador_Maior:comp_maior" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 123
+Info (12128): Elaborating entity "Decodificador_Produto" for hierarchy "Decodificador_Produto:decod_preco_prod" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 129
+Info (12128): Elaborating entity "Registrador" for hierarchy "Registrador:reg_total_inserido" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 134
+Info (12128): Elaborating entity "Subtrator" for hierarchy "Subtrator:subtracao" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 142
+Info (12128): Elaborating entity "Display_Controller" for hierarchy "Display_Controller:display" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 156
+Warning (10036): Verilog HDL or VHDL warning at Display_Controller.vhd(28): object "preco_produto_bcd" assigned a value but never read File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd Line: 28
+Info (12128): Elaborating entity "Binary_8_to_BCD" for hierarchy "Display_Controller:display|Binary_8_to_BCD:U1" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd Line: 52
+Info (12128): Elaborating entity "Binary_4_to_BCD" for hierarchy "Display_Controller:display|Binary_4_to_BCD:U4" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Display_Controller/Display_Controller.vhd Line: 70
+Info (12128): Elaborating entity "Demux" for hierarchy "Demux:demux_coin_and_more_coins" File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 165
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "valor_displays[10]" is stuck at GND File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 15
-    Warning (13410): Pin "valor_displays[11]" is stuck at GND File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 15
-    Warning (13410): Pin "valor_displays[12]" is stuck at GND File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 15
-    Warning (13410): Pin "valor_displays[13]" is stuck at GND File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 15
-    Warning (13410): Pin "valor_displays[14]" is stuck at GND File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 15
-    Warning (13410): Pin "valor_displays[15]" is stuck at GND File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 15
+    Warning (13410): Pin "valor_displays[21]" is stuck at VCC File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 26
+    Warning (13410): Pin "valor_displays[22]" is stuck at VCC File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 26
+    Warning (13410): Pin "valor_displays[23]" is stuck at VCC File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 26
+    Warning (13410): Pin "valor_displays[24]" is stuck at VCC File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 26
+    Warning (13410): Pin "valor_displays[25]" is stuck at VCC File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 26
+    Warning (13410): Pin "valor_displays[26]" is stuck at VCC File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 26
+    Warning (13410): Pin "valor_displays[27]" is stuck at VCC File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 26
+    Warning (13410): Pin "valor_displays[37]" is stuck at VCC File: C:/Users/Bianca/Documents/ufmg/3-periodo/lsd/vending-machine/rtl/Datapath/Datapath.vhd Line: 26
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 195 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 141 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 56 output pins
+    Info (21061): Implemented 120 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
     Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Wed Feb 05 16:26:27 2025
-    Info: Elapsed time: 00:00:11
+    Info: Processing ended: Thu Feb 06 22:44:23 2025
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:22
 
 

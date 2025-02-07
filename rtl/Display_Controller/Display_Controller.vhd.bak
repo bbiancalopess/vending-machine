@@ -1,0 +1,118 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Display_Controller is 
+	port (
+		estado_fsm 				: in STD_LOGIC_VECTOR(2 downto 0);
+		total_inserido			: in STD_LOGIC_VECTOR(7 downto 0);
+		troco_armazenado		: in STD_LOGIC_VECTOR(7 downto 0);
+		produto_escolhido		: in STD_LOGIC_VECTOR(3 downto 0);
+		preco_produto			: in STD_LOGIC_VECTOR(7 downto 0);
+		display_segments		: out STD_LOGIC_VECTOR(41 downto 0);
+	);
+end Display_Controller;
+
+architecture Behavioral of Display_Controller is
+
+	-- Códigos para os caracteres no display de 7 segmentos
+   constant CHAR_E : STD_LOGIC_VECTOR(3 downto 0) := "1101";  -- 'E'
+   constant CHAR_P : STD_LOGIC_VECTOR(3 downto 0) := "1100";  -- 'P'
+   constant CHAR_L : STD_LOGIC_VECTOR(3 downto 0) := "1010";  -- 'L'
+   constant CHAR_T : STD_LOGIC_VECTOR(3 downto 0) := "1011";  -- 'T'
+	constant CHAR_R : STD_LOGIC_VECTOR(3 downto 0) := "1110";  -- 'R'
+	constant APAGADO : STD_LOGIC_VECTOR(3 downto 0) := "1111";  -- ' '
+
+	-- Sinais para armazenar os valores BCD
+   signal total_inserido_bcd : STD_LOGIC_VECTOR(11 downto 0);
+   signal preco_produto_bcd  : STD_LOGIC_VECTOR(11 downto 0);
+   signal troco_armazenado_bcd : STD_LOGIC_VECTOR(11 downto 0);
+	signal produto_escolhido_bcd : STD_LOGIC_VECTOR(7 downto 0);
+	signal valor_displays : STD_LOGIC_VECTOR(23 downto 0);
+	signal digito_atual : STD_LOGIC_VECTOR(3 downto 0);
+	
+	-- Componente para conversão de binário para BCD
+   component Binary_8_To_BCD
+      port (
+         binary_in : in STD_LOGIC_VECTOR(7 downto 0);
+         bcd_out   : out STD_LOGIC_VECTOR(11 downto 0)
+      );
+   end component;
+	
+	component Binary_4_to_BCD
+      port (
+         binary_in : in STD_LOGIC_VECTOR(3 downto 0);
+         bcd_out   : out STD_LOGIC_VECTOR(7 downto 0)
+      );
+   end component;
+	
+begin
+   -- Instâncias do componente Binary_to_BCD
+   U1: Binary_8_To_BCD 
+		port map (
+			binary_in => total_inserido,
+			bcd_out   => total_inserido_bcd
+		);
+
+   U2: Binary_8_To_BCD 
+		port map (
+			binary_in => preco_produto,
+			bcd_out   => preco_produto_bcd
+		);
+
+   U3: Binary_8_To_BCD 
+		port map (
+			binary_in => troco_armazenado,
+			bcd_out   => troco_armazenado_bcd
+		);
+	
+	U4: Binary_4_to_BCD
+		port map (
+			binary_in => produto_escolhido,
+			bcd_out   => produto_escolhido_bcd
+		);
+
+   -- Processo para selecionar a mensagem a ser exibida
+   process(estado_fsm, total_inserido_bcd, troco_armazenado_bcd, produto_escolhido_bcd, preco_produto_bcd)
+   begin
+      case estado_fsm is
+         when "000" =>  -- Estado ESPERA: Exibir "EP xxx"
+            valor_displays <= CHAR_E & CHAR_P & APAGADO & total_inserido_bcd(11 downto 8) & total_inserido_bcd(7 downto 4) & total_inserido_bcd(3 downto 0);
+         when "011" =>  -- Estado LIBERA_PRODUTO: Exibir "PL  xx"
+            valor_displays <= CHAR_P & CHAR_L & APAGADO & APAGADO & produto_escolhido_bcd(7 downto 4) & produto_escolhido_bcd(3 downto 0);
+         when "110" =>  -- Estado RETORNA_TROCO: Exibir "TR xxx"
+            valor_displays <= CHAR_T & CHAR_R & APAGADO & troco_armazenado_bcd(11 downto 8) & troco_armazenado_bcd(7 downto 4) & troco_armazenado_bcd(3 downto 0);
+         when "100" =>  -- Estado ERRO_VALOR: Exibir "E xxx"
+            valor_displays <= CHAR_E & APAGADO & APAGADO & total_inserido_bcd(11 downto 8) & total_inserido_bcd(7 downto 4) & total_inserido_bcd(3 downto 0);
+         when others =>  -- Estado inválido ou padrão
+            valor_displays <= (others => '1');  -- Apagado
+      end case;
+		
+		for i in 0 to 5 loop
+			digito_atual <= valor_displays((i*4)+3 downto i*4);
+			
+			case digito_atual is
+				-- Dígitos (0-9)
+				when "0000" => display_segments <= "1000000" & display_segments;  -- 0
+				when "0001" => display_segments <= "1111001" & display_segments;  -- 1
+				when "0010" => display_segments <= "0100100" & display_segments;  -- 2
+				when "0011" => display_segments <= "0110000" & display_segments;  -- 3
+				when "0100" => display_segments <= "0011001" & display_segments;  -- 4
+				when "0101" => display_segments <= "0010010" & display_segments;  -- 5
+				when "0110" => display_segments <= "0000010" & display_segments;  -- 6
+				when "0111" => display_segments <= "1111000" & display_segments;  -- 7
+				when "1000" => display_segments <= "0000000" & display_segments;  -- 8
+				when "1001" => display_segments <= "0010000" & display_segments;  -- 9
+
+				-- Letras (P, L, T, E, R)
+				when "1010" => display_segments <= "1000111" & display_segments;  -- L
+				when "1011" => display_segments <= "0000111" & display_segments;  -- T
+				when "1100" => display_segments <= "0001100" & display_segments;  -- P
+				when "1101" => display_segments <= "0000110" & display_segments;  -- E
+				when "1110" => display_segments <= "0001000" & display_segments;  -- R
+				when "1111" => display_segments <= "1111111" & display_segments;  -- Apagado
+				when others => display_segments <= "1111111" & display_segments;  -- Apagado
+			end case;
+   end process;
+end Behavioral;	
+	

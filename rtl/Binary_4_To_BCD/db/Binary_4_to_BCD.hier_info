@@ -1,0 +1,15 @@
+|Binary_4_to_BCD
+binary_in[0] => ~NO_FANOUT~
+binary_in[1] => ~NO_FANOUT~
+binary_in[2] => ~NO_FANOUT~
+binary_in[3] => ~NO_FANOUT~
+bcd_out[0] <= <GND>
+bcd_out[1] <= <GND>
+bcd_out[2] <= <GND>
+bcd_out[3] <= <GND>
+bcd_out[4] <= <GND>
+bcd_out[5] <= <GND>
+bcd_out[6] <= <GND>
+bcd_out[7] <= <GND>
+
+

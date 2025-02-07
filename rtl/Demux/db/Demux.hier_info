@@ -1,0 +1,9 @@
+|Demux
+dados => saida0.DATAB
+dados => saida1.DATAA
+sel => saida0.OUTPUTSELECT
+sel => saida1.OUTPUTSELECT
+saida0 <= saida0.DB_MAX_OUTPUT_PORT_TYPE
+saida1 <= saida1.DB_MAX_OUTPUT_PORT_TYPE
+
+
