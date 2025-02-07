@@ -244,7 +244,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wWB9Oif9JZkl5KvX-S0c" name="diagrama caminho de dados">
-    <mxGraphModel dx="6432" dy="3714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="7387" dy="6209" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -790,6 +790,12 @@
         </mxCell>
         <mxCell id="Rc7caZYkdd3dDKBNHxdi-3" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;troco&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="2360" y="2170" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cLLjo0L0ABP0YOR5LjSd-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="929.17" y="-170" as="sourcePoint" />
+            <mxPoint x="929.17" y="80" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
